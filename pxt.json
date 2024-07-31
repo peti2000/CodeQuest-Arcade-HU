@@ -1,0 +1,27 @@
+{
+    "name": "GameCode",
+    "version": "8.0.2",
+    "dependencies": {
+        "core": "*",
+        "builder": "*"
+    },
+    "files": [
+        "1-saveTheArcade/tutorials/1-helloAgent.md",
+        "1-saveTheArcade/tutorials/2-1-events.md",
+        "1-saveTheArcade/tutorials/2-2-events.md",
+        "1-saveTheArcade/tutorials/2-3-events.md",
+        "1-saveTheArcade/tutorials/3-sequencing.md",
+        "1-saveTheArcade/tutorials/4-repeat.md",
+        "1-saveTheArcade/tutorials/5-if.md",
+        "1-saveTheArcade/tutorials/6-while.md",
+        "1-saveTheArcade/tutorials/0-close.md"
+    ],
+    "targetVersions": {
+        "target": "1.6.8",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
