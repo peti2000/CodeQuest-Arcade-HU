@@ -1,4 +1,4 @@
-# Elágazások
+# Elágazások (ha)
 
 ### @explicitHints 1
 
@@ -33,8 +33,8 @@ player.onChat("javit", function () {
 ```
 ### A feltétel meghatározása
 
-Based on the direction the agent is facing, the ``||agent:agent detect||`` block should be set to check to the agent’s right from the dropdown. The ``||agent:agent detect||`` block can determine whether there is a solid block next to the agent.
-Be sure to specify the correct direction in the ``||agent:agent detect||`` block. Also, the ``||loops:repeat||`` block is already set to run the correct number of times.
+Attól függően, hogy Robi milyen irányba néz, az ``||agent:ügynök felismeri||`` blokkot úgy kell beállítani, hogy a legördülő menüből Robitól jobbra ellenőrizze. Az ``||agent:ügynök felismeri||`` blokk meg tudja határozni, hogy van-e szilárd kocka Robi mellett.
+Ügyelj arra, hogy a megfelelő irányt add meg az ``||agent:ügynök felismeri||`` blokkban, ezenkívül az ``||loops:ismétlés||`` blokk már be van állítva a megfelelő számú futásra.
 
 #### ~ tutorialhint
 
@@ -49,10 +49,10 @@ player.onChat("javit", function () {
 })
 ```
 
-### If true...
+### Ha igaz...
 
-If the agent does ``||agent:agent detect||``  a block to the right, we want the agent to ``||agent:agent destroy||``  the block. Inside the ``||logic:if||`` block, add ``||agent:agent destroy||`` **right**.
-Whether or not the agent **detects** a block to destroy, when it is complete, we need it to move forward. Let's add an ``||agent:agent move||`` **forward** after the ``||logic:if||`` block.
+Ha Robi ``||agent:ügynök felismeri||`` blokk segítségével egy kockát detektál a jobb oldalán, akkor azt akarjuk, hogy ``||agent:Robi rombolja le||`` a blokkot. A ``||logic:ha||`` blokkon belül add hozzá a következőt: ``||agent:ügynök rombolása||`` **jobba**.
+Függetlenül attól, hogy Robi **észleli** a megsemmisítendő kockát vagy sem, ha az elkészült, szükségünk van rá, hogy továbblépjen. Adjunk hozzá egy ``||agent:ügynök mozog||`` **előre** blokkot a ``||logic:ha||`` blokk után.
 
 #### ~ tutorialhint
 
@@ -67,11 +67,11 @@ player.onChat("javit", function () {
 })
 ```
 
-### Run your code
+### Futtasd a kódod
 
-Press the green **Play** button to run the code. Then type **javit** in chat to have your agent complete the task.
+Nyomd meg a zöld **Lejátszás** gombot a kód futtatásához. Ezután írjd be a **javit** szót a chatbe, hogy Robi elvégezze a feladatot.
 
-Code with a condition can determine whether a specific section of code will run, which eliminates the need for manually coding every single step.
+A feltétellel rendelkező kód meghatározhatja, hogy egy adott kódrészlet lefusson-e, ami szükségtelenné teszi minden egyes lépés manuális kódolását.
 
 #### ~ tutorialhint
 

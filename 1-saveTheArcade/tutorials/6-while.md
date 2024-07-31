@@ -1,4 +1,4 @@
-# While
+# Ciklusok (Amíg)
 
 ### @explicitHints 1
 
@@ -6,33 +6,33 @@
 
 ## First Activity
 
-### Conditional looping
+### Feltételes ciklus
 
-For some problems involving a loop, a ``||loops:repeat block||`` is not the best option. We may need to run the code until a certain condition is met. 
+Egyes ciklusokkal kapcsolatos problémák esetén az ``||loops:ismétlés||`` blokk nem a legjobb megoldás. Lehetséges, hogy le kell futtatnunk a kódot, amíg egy bizonyos feltétel nem teljesül.
 
-A ``||loops:while||`` block is another type of loop that uses a condition to determine whether it should repeatedly loop through its code.
-
-#### ~ tutorialhint
-
-A ``||loops:while||`` block runs its code while the condition is true.  After running the code inside, the ``||loops:while||`` block checks the condition once more to determine whether to run its code again.  The ``||loops:while||`` loop terminates when the condition is false.
-
-### Agent inspect
-
-The ``||agent:agent inspect||`` block is a value block.  **Value blocks** have a distinct rounded shape and provide a piece of information, which is called a **value**.  The information returned by ``||agent:agent inspect||`` is the type of Minecraft block next to the agent. Value blocks fit in the rounded bubbles of other code blocks where a value is expected.Notice that ``||agent:agent inspect||`` is in the rounded bubble of the ``||agent:agent set block or item||`` block.
+Az ``||loops:amíg||`` blokk egy másik típusú ciklus, amely feltételt használ annak meghatározására, hogy kell-e ismételten végigfutnia a kódon.
 
 #### ~ tutorialhint
 
-The placement of ``||agent:agent inspect||`` in ``||agent:agent set block or item||`` puts whatever block is to the agent's right in the agent's inventory.
+Az ``||loops:amíg||`` blokk addig futtatja a kódját, amíg a feltétel igaz. A belső kód futtatása után az ``||loops:amíg||`` blokk még egyszer ellenőrzi a feltételt, hogy eldöntse, újra le kell-e futtatni a kódot. Az ``||loops:amíg||`` ciklus véget ér, ha a feltétel hamis.
 
-### Comparing values
+### Vizsgálódás
 
-The ``||logic:LOGIC||`` category has a condition block that allows for the ``||logic:comparison||`` of two values.  With the **equal sign (=)** selected, the ``||logic:comparison||`` block returns true if the two values are the same.
-Try to use a ``||logic:comparison||`` block to make a condition for the ``||loops:while||`` block.  The agent needs to continue its task ``||loops:while||`` ``||agent:agent inspect||`` **down** is equal to **cobblestone**.
+Az ``||agent:ügynök megvizsgálja||`` blokk egy értékblokk. Az **értékblokkok** határozottan lekerekített formájúak, és információt szolgáltatnak, amelyet **értéknek** nevezünk. Az ``||agent:ügynök megvizsgálja||`` blokk által visszaadott információ az ügynök melletti Minecraft kocka típusa. Az értékblokkok elférnek más kódblokkok lekerekített buborékaiban, ahol értéket várnak. Figyeld meg, hogy az ``||agent:ügynük megvizsgálja||`` az ``||agent:agent lehelyezi a blokkot||`` kerekített buborékában található.
+
+#### ~ tutorialhint
+
+Az ``||agent:ügynök megvizsgálja||`` blokk elhelyezése az ``||agent:agent lehelyezi a blokkot||``-ban Robi leltárában a tőle jobbra található blokkot helyezi el.
+
+### Értékek összehasonlítása
+
+A ``||logic:FELTÉTELEK||`` kategória rendelkezik egy feltételblokkkal, amely lehetővé teszi két érték ``||logic:összehasonlítását||``. Ha az **egyenlőségjelet (=)** kiválasztod, az ``||logic:összehasonlítás||`` blokk igaz értéket ad vissza, ha a két érték megegyezik.
+Használj ``||logic:összehasonlítás||`` blokkot az ``||loops:amíg||`` blokk feltételéhez. Robinak folytatnia kell feladatát ``||loops:amíg||`` ``||agent:ügynök megvizsgál||`` **lent** egyenlő **macskakő**-vel.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("copy", function () {
+player.onChat("masol", function () {
     while (agent.inspect(AgentInspection.Block, DOWN) == COBBLESTONE) {
         agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)
         agent.place(LEFT)
@@ -41,15 +41,15 @@ player.onChat("copy", function () {
 })
 ```
 
-### Review
+### Összegzés
 
-A ``||loops:while||`` block uses a condition to determine whether it should continue to loop through its code. ``||loops:While||`` loops are useful when the number of times to repeat is unclear but a condition for repeating is apparent. ``||logic:Comparison||`` blocks can compare two values to create a condition.
-Don't forget to run your code and type **copy** in the chat.
+Az ``||loops:amíg||`` blokk egy feltételt használ annak meghatározására, hogy folytatnia kell-e a ciklust a kódjában. Az ``||loops:amíg||`` ciklusok akkor hasznosak, ha az ismétlések száma nem világos, de az ismétlés feltétele nyilvánvaló. Az ``||logic:összehasonlítás||`` blokkok összehasonlíthatnak két értéket egy feltétel létrehozásához.
+Ne felejtsd el lefuttatni a kódot, és beírni a **masol** szót a chatbe.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("copy", function () {
+player.onChat("masol", function () {
     while (agent.inspect(AgentInspection.Block, DOWN) == COBBLESTONE) {
         agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)
         agent.place(LEFT)
@@ -59,7 +59,7 @@ player.onChat("copy", function () {
 ```
 
 ```template
-player.onChat("copy", function () {
+player.onChat("masol", function () {
     while (false) {
         agent.setItem(agent.inspect(AgentInspection.Block, RIGHT), 1, 1)
         agent.place(LEFT)
@@ -70,7 +70,7 @@ player.onChat("copy", function () {
 
 ```ghost
 
-player.onChat("copy", function () {
+player.onChat("masol", function () {
     while (agent.inspect(AgentInspection.Block, FORWARD) == COBBLESTONE) {
         agent.setItem(agent.inspect(AgentInspection.Block, FORWARD), 1, 1)
         agent.place(FORWARD)
