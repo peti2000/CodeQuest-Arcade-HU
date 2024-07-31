@@ -1,4 +1,4 @@
-# If
+# Elágazások
 
 ### @explicitHints 1
 
@@ -6,32 +6,32 @@
 
 ## First Activity
 
-### Making decisions
+### Döntéshozatal
 
-Some problems involve performing actions over and over, but other actions are not necessarily repeated consistently.  An ``||logic:if||`` block can simplify code by determining when it is appropriate to perform a certain action.
-An ``||logic:if||`` block is another type of **compound statement block**.  It uses a **condition** to determine whether to run its code.  If the condition is true, then the code inside the ``||logic:if||`` block will run.
+Egyes problémák a műveletek újra és újra elvégzésével járnak, de más műveletek nem feltétlenül ismétlődnek meg következetesen. Egy ``||logic:ha||`` blokk leegyszerűsítheti a kódot azáltal, hogy meghatározza, mikor érdemes végrehajtani egy bizonyos műveletet.
+A ``||logic:ha||`` blokk egy másik típusú **összetett utasításblokk**. Egy **feltételt** használ annak meghatározására, hogy futtassa-e a kódját. Ha a feltétel igaz, akkor a ``||logic:ha||`` blokkon belüli kód lefut.
 
 #### ~ tutorialhint
 
-A **condition** can be true or false.  **Condition blocks** have a distinct pointed shape to indicate that they fit where a condition is expected.
+Egy **feltétel** lehet igaz vagy hamis. A **feltételblokkok** külön hegyes alakkal rendelkeznek, jelezve, hogy ott illeszkednek, ahol a feltétel elvárt.
 
-### Agent detect
+### Ügynöki érzék
 
-Try using an ``||logic:if||`` block and an ``||agent:agent detect||`` block to make the ``||agent:agent destroy||`` only solid blocks.
-From the ``||logic:LOGIC||`` category drag an ``||logic:if||`` block inside the ``||loops:repeat||`` block.
-From the ``||agent:AGENT||`` category drag an ``||agent:agent detect||`` block and place it where it fits inside the ``||logic:if||`` block.
+Próbálj meg egy ``||logic:ha||`` blokkot és egy ``||agent:ügynök felismeri||`` blokkot használni, hogy az ``||agent:ügynök rombol||`` csak tömör blokkokat vegyen figyelembe.
+A ``||logic:FELTÉTELEK||`` kategóriából húzz egy ``||logic:ha||`` blokkot az ``||loops:ismétlés||`` blokkon belülre.
+Az ``||agent:ÜGYNÖK||`` kategóriából húzz egy ``||agent:ügynök felismeri||`` blokkot, és helyezd el a ``||logic:ha||`` blokkon belül a megfelelő helyre.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("fix", function () {
+player.onChat("javit", function () {
     for (let index = 0; index < 12; index++) {
         if (agent.detect(AgentDetection.Block, FORWARD)) {
         }
     }
 })
 ```
-### Determining the condition
+### A feltétel meghatározása
 
 Based on the direction the agent is facing, the ``||agent:agent detect||`` block should be set to check to the agent’s right from the dropdown. The ``||agent:agent detect||`` block can determine whether there is a solid block next to the agent.
 Be sure to specify the correct direction in the ``||agent:agent detect||`` block. Also, the ``||loops:repeat||`` block is already set to run the correct number of times.
@@ -39,7 +39,7 @@ Be sure to specify the correct direction in the ``||agent:agent detect||`` block
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("fix", function () {
+player.onChat("javit", function () {
     for (let index = 0; index < 12; index++) {
         if (agent.detect(AgentDetection.Block, RIGHT)) {
            
@@ -57,7 +57,7 @@ Whether or not the agent **detects** a block to destroy, when it is complete, we
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("fix", function () {
+player.onChat("javit", function () {
     for (let index = 0; index < 12; index++) {
         if (agent.detect(AgentDetection.Block, RIGHT)) {
             agent.destroy(RIGHT)
@@ -69,14 +69,14 @@ player.onChat("fix", function () {
 
 ### Run your code
 
-Press the green **Play** button to run the code. Then type **fix** in chat to have your agent complete the task.
+Press the green **Play** button to run the code. Then type **javit** in chat to have your agent complete the task.
 
 Code with a condition can determine whether a specific section of code will run, which eliminates the need for manually coding every single step.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("fix", function () {
+player.onChat("javit", function () {
     for (let index = 0; index < 12; index++) {
         if (agent.detect(AgentDetection.Block, RIGHT)) {
             agent.destroy(RIGHT)
@@ -87,7 +87,7 @@ player.onChat("fix", function () {
 ```
 
 ```template
-player.onChat("fix", function () {
+player.onChat("javit", function () {
     for (let index = 0; index < 12; index++) {
     }
 })

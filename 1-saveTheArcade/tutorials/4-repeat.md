@@ -1,4 +1,4 @@
-# Repeat
+# Ismétlés
 
 ### @explicitHints 1
 
@@ -6,33 +6,33 @@
 
 ## First Activity
 
-### Patterns
+### Minták
 
-Some problems involve performing a certain set of actions over and over.  A **repeat loop** can simplify the solution by eliminating the need to rewrite the same code multiple times.
-A ``||loops:repeat||`` block is a **compound statement block**.  A compound statement block can fit anywhere a statement block fits, but also has an inner section where more statement blocks can be added.
+Egyes problémák bizonyos műveletek újra és újra elvégzésével járnak. Egy **ismétlés** blokk leegyszerűsítheti a megoldást azáltal, hogy nincs szükség ugyanazon kód többszöri átírására.
+Az ``||loops:ismétlés||`` blokk egy **összetett utasításblokk**. Egy összetett utasításblokk bárhova elfér, ahol egy utasításblokk elfér, de van egy belső szakasza is, ahol további utasításblokkok adhatók hozzá.
 
 #### ~ tutorialhint
 
-A ``||loops:repeat||`` block fits inside an event block but needs statement blocks inside it.
+Egy ``||loops:ismétlés||`` blokk belefér egy eseményblokkba, de utasításblokkokra van szüksége benne.
 
 ```blocks
-player.onChat("clean", function () {
+player.onChat("tiszta", function () {
     for (let index = 0; index < 4; index++) {
     	
     }
 })
 ```
 
-### Repeating a sequence
+### Szekvencia ismétlése
 
-Drag a ``||loops:repeat||`` block from the ``||loops:LOOPS||`` category into the ``||player:chat command||`` and place the existing ``||agent:agent destroy||`` and ``||agent:agent move||`` code blocks inside it.
+Húzz egy ``||loops:ismétlés||`` blokkot a ``||loops:CIKLUSOK||`` kategóriából a ``||player:chat parancsra||`` kategóriájába, és helyezd el a meglévő ``||agent:ügynök rombol||`` és ``||agent:ügynök mozog||`` blokkokat benne.
 
-A ``||loops:repeat||`` block is a type of **loop** because it loops through the same section of code multiple times.
+Az ``||loops:ismétlés||`` blokk **ciklus**, mert ugyanazon a kódszakaszon többször is végigfut.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("clean", function () {
+player.onChat("tiszta", function () {
     for (let index = 0; index < 4; index++) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
@@ -40,14 +40,14 @@ player.onChat("clean", function () {
 })
 ```
 
-### Loop Counting
+### Ismétlések számolása
 
-We need to specify how many times we want the ``||loops:repeat||`` block to run. By default it is set to 4 times, but the agent has 12 spaces to clean. We can change the **4** value to a **12** inside the ``||loops:repeat||`` block.
+Meg kell adnunk, hogy hányszor fusson le az ``||loops:ismétlés||`` blokk. Alapértelmezés szerint 4 van beállítva, de Robinak 12 helye van a tisztításra. A **4** értéket **12**-re változtathatjuk az ``||loops:ismétlés||`` blokkon belül.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("clean", function () {
+player.onChat("tiszta", function () {
     for (let index = 0; index < 12; index++) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
@@ -55,16 +55,16 @@ player.onChat("clean", function () {
 })
 ```
 
-### Review
+### Összegzés
 
-Repeat loops run a sequence of statements a certain number of times. Loops can greatly reduce the amount of code to write to solve a problem.
+Az ismétlődő ciklusok utasítások sorozatát bizonyos számú alkalommal futtatják, nagymértékben csökkenthetik a probléma megoldásához írandó kód mennyiségét.
 
-Don't forget to press Play and then type **clean** in the chat to run the code.
+Ne felejtsd el megnyomni a Lejátszás gombot, majd a kód futtatásához írd be a **tiszta** szót a chatbe.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("clean", function () {
+player.onChat("tiszta", function () {
     for (let index = 0; index < 12; index++) {
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
@@ -73,7 +73,7 @@ player.onChat("clean", function () {
 ```
 
 ```template
-player.onChat("clean", function () {
+player.onChat("tiszta", function () {
     agent.destroy(FORWARD)
     agent.move(FORWARD, 1)
 })

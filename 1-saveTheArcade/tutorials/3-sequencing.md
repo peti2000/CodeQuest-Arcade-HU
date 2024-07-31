@@ -6,48 +6,48 @@
 
 ## First Activity
 
-### Placing blocks
+### Kocka lerakása
 
-The agent is capable of placing Minecraft blocks, but doing so is a multi-step process.  Before the agent can place a Minecraft block, the agent needs to have a block in its inventory.
+Robi képes Minecraft kockákat elhelyezni, de ez egy többlépcsős folyamat. Mielőtt elhelyezhetne egy Minecraft kockát, rendelkeznie kell vele a készletében.
 
-The first step is to use ``||agent:agent set block or item||`` to put a block in the agent's inventory.
+Az első lépés az ``||agent:agent lehelyezi a blokkot a következő nyílásba||`` használatával kockát helyezni Robi leltárába.
 
 #### ~ tutorialhint
 
-The agent places blocks from its first inventory slot by default, so use ``||agent:agent set block or item||`` to set a block in slot **1** of the agent's inventory.
+Robi alapértelmezetten mindig az első nyílásából helyezi el a kockákat, ezért használd az ``||agent:agent lehelyezi a blokkot a következő nyílásba||`` blokkot, hogy Robi leltárának **1.** helyére kockát helyezz el.
 
-### Searching by block name
+### Keresés név alapján
 
-The drop-down menu in ``||agent:agent set block or item||`` is rather large, so finding a specific Minecraft block can be challenging.
+Az ``||agent:agent lehelyezi a blokkot a következő nyílásba||`` legördülő menüje meglehetősen nagy, így egy adott Minecraft kocka megtalálása kihívást jelenthet.
 
-In the drop-down menu, search for **redstone** to quickly find and select **Block of Redstone**.
+A legördülő menüben keress rá a **vöröskő** kifejezésre, hogy gyorsan megtaláld és válaszd ki a **Vöröskő blokk** lehetőséget.
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("place", function () {
+player.onChat("lerak", function () {
     agent.setItem(REDSTONE_BLOCK, 1, 1)
 })
 ```
 
-### Consecutive statements
+### Egymást követő tevékenységek
 
-The second step, after putting a block in the agent's inventory, is to make the ``||agent:agent place||`` the block.
+A második lépés egy kocka elhelyezése után Robi leltárába, hogy lerakja a kockát az ``||agent:ügynök helye||`` blokkal.
 
-Drag an ``||agent:agent place||`` block from the ``||agent:AGENT||`` category and attach it to the bottom of ``||agent:agent set block or item||``.  Then run the **place** ``||player:chat command||``.
+Húzz egy ``||agent:ügynök helye||`` blokkot az ``||agent:ÜGYNÖK||`` kategóriából, és csatold az ``||agent:agent lehelyezi a blokkot a következő nyílásba||`` aljához. Ezután futtasd a **lerak** ``||player:chat parancsot||``.
 
 
 #### ~ tutorialhint
 
 ```blocks
-player.onChat("place", function () {
+player.onChat("lerak", function () {
     agent.setItem(REDSTONE_BLOCK, 1, 1)
     agent.place(FORWARD)
 })
 ```
 
 ```template
-player.onChat("place", function () {
+player.onChat("lerak", function () {
     agent.setItem(GRASS, 1, 1)
 })
 ```
