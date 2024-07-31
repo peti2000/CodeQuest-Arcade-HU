@@ -213,139 +213,134 @@ board.tut5.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásáho
 board.tut5.line3=§r
 board.tut5.line4=§62. §rÚtmutató befejezése
 board.tut5.line5=§r
-board.tut5.line6=§e3. §rPress Play Button
+board.tut5.line6=§e3. §rNyomd meg a Lejátszás gombot
 board.tut5.line7=§r
-board.tut5.line8=§a4. §rOpen Chat
+board.tut5.line8=§a4. §rNyisd meg a chatet
 board.tut5.line9=§r
-board.tut5.line10=§b5. §rType "clean"
+board.tut5.line10=§b5. §rÍrd be: "tiszta"
 board.tut5.line11=§r
-board.tut5.line12=§d6. §rSend
+board.tut5.line12=§d6. §rKüldés
 board.tut5.line13=§r
-board.tut5.line14=For HELP, or to RESET, speak to Captain Mikenna behind you
+board.tut5.line14=Ha segítség kell, beszélj Mikenna kapitánnyal
 board.tut5.line15=§r
 
 board.tut6.line1=§r
-board.tut6.line2=§c1. §rPress "C", or the  Icon to open Code Builder
+board.tut6.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
 board.tut6.line3=§r
-board.tut6.line4=§62. §rComplete Tutorial
+board.tut6.line4=§62. §rÚtmutató befejezése
 board.tut6.line5=§r
-board.tut6.line6=§e3. §rPress Play Button
+board.tut6.line6=§e3. §rNyomd meg a Lejátszás gombot
 board.tut6.line7=§r
-board.tut6.line8=§a4. §rOpen Chat
+board.tut6.line8=§a4. §rNyisd meg a chatet
 board.tut6.line9=§r
-board.tut6.line10=§b5. §rType "fix"
+board.tut6.line10=§b5. §rÍrd be: "javit"
 board.tut6.line11=§r
-board.tut6.line12=§d6. §rSend
+board.tut6.line12=§d6. §rKüldés
 board.tut6.line13=§r
-board.tut6.line14=For HELP, or to RESET, speak to Captain Mikenna behind you
+board.tut6.line14=Ha segítség kell, beszélj Mikenna kapitánnyal
 board.tut6.line15=§r
 
 board.tut7.line1=§r
-board.tut7.line2=§c1. §rPress "C", or the  Icon to open Code Builder
+board.tut7.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
 board.tut7.line3=§r
-board.tut7.line4=§62. §rComplete Tutorial
+board.tut7.line4=§62. §rÚtmutató befejezése
 board.tut7.line5=§r
-board.tut7.line6=§e3. §rPress Play Button
+board.tut7.line6=§e3. §rNyomd meg a Lejátszás gombot
 board.tut7.line7=§r
-board.tut7.line8=§a4. §rOpen Chat
+board.tut7.line8=§a4. §rNyisd meg a chatet
 board.tut7.line9=§r
-board.tut7.line10=§b5. §rType "copy"
+board.tut7.line10=§b5. §rÍrd be: "masol"
 board.tut7.line11=§r
-board.tut7.line12=§d6. §rSend
+board.tut7.line12=§d6. §rKüldés
 board.tut7.line13=§r
-board.tut7.line14=For HELP, or to RESET, speak to Captain Mikenna behind you
+board.tut7.line14=Ha segítség kell, beszélj Mikenna kapitánnyal
 board.tut7.line15=§r
 
-## Dialogue
-host.ship.preintro1=So glad you are here! My name is Mikenna, Captain of our ship, The Hopper. Our group, the GameCode Crew, is always looking for new members to help us solve problems using our computer science knowhow. Welcome aboard!
-host.ship.preintro2=The members of the GameCode Crew come from all over the world, but The Hopper is our mobile headquarters. Why don't you take this time to familiarize yourself with the ship and meet the rest of the crew. I am sure they'll be excited to meet you.
-host.ship.preintro3=Glad you had the chance to meet the GameCode Crew. We really love working as a team so we are going to be here to help you every step of the way.
-makecodenode.ship.intro1=If you see this icon, it means that a team member has important information to help you on your coding missions.
+## Párbeszédek
+host.ship.preintro1=Nagyon örülök, hogy itt vagy! Mikenna vagyok, a Hopper hajó kapitánya. Csapatunk, a GameCode Crew, mindig új tagokat keres, hogy segítsenek nekünk problémákat megoldani a számítástechnikai tudásunkkal. Üdv a fedélzeten!
+host.ship.preintro2=A GameCode Crew tagjai a világ minden tájáról származnak, de a Hopper a mobil központunk. Használd ezt az időt arra, hogy megismerkedj a hajóval és találkozz a csapattal. Biztos vagyok benne, hogy izgatottan várják a találkozást.
+host.ship.preintro3=Örülök, hogy lehetőséged volt megismerkedni a GameCode Crew-val. Nagyon szeretünk csapatként dolgozni, így minden lépésnél itt leszünk, hogy segítsünk.
+makecodenode.ship.intro1=Ha látod ezt az ikont, az azt jelenti, hogy egy csapattagnak fontos információi vannak a kódolási küldetéseidhez.
 
-alarm.ship.intro1=*ALERT ALERT ALERT*
-host.ship.intro1=The Alarm! According to our sensors, the GameCode Crew is being summoned to save a dying arcade. This challenge is going to need the help of a gamer that can fix these old machines and create new games that their friends would love to play. We're so glad you're the one that came to help!
-host.ship.intro2=There's lots to do. If we don't get these machines working, they'll be trashed in the creeper pit and the space will be turned into a storage room.
+alarm.ship.intro1=*RIADÓ, RIADÓ, RIADÓ*
+host.ship.intro1=A riasztó! Érzékelőink szerint a GameCode Crew-t egy haldokló játékterem megmentésére hívják. Ehhez a kihíváshoz egy olyan játékosra van szükség, aki meg tudja javítani ezeket a régi gépeket, és új játékokat tud létrehozni, amelyeket barátai szeretnének játszani. Nagyon örülünk, hogy te vagy az, aki segíteni jött!
+host.ship.intro2=Sok a tennivaló. Ha nem javítjuk meg ezeket a gépeket, a creeper gödörbe kerülnek, és a helyet raktárként fogják használni.
 
-kid2.ship.intro1=Hey there! Heard we might be getting a new member. Glad to have you aboard! Hope you love using variables as much as I do. Do you have a favorite coding concept yet? If not, I'm sure you'll discover one. 
-kid3.ship.intro1=It's the new member! Pleasure to meet you. Did you know our ship, The Hopper, can take us to any mission almost instantly? Pretty cool tech, huh? It took the entire GameCode Crew to make it happen.
-kid4.ship.intro1=It's not always easy solving problems with code. That's one reason why we are always looking for new members like you. So happy to have you here! One more computational thinker is always a good thing.
-kid5.ship.intro1=Welcome! We could have really used a smart coder like you on our last mission. It wasn't easy getting that whole fleet of food trucks back up and running. There were so many bugs in their software. At least the bugs weren't in the food!
-kid6.ship.intro1=I'm really stuck on this coding problem right now. I can't decide whether to use a WHILE LOOP or an IF/ELSE statement. I bet that's something you are going to be able to help me solve. We are lucky to have you!
-kid7.ship.intro1=I love solving coding problems. Sometimes it just feels like a big puzzle waiting to be put together. You look like you love a good puzzle too. I bet we will code some really cool stuff together!
+kid2.ship.intro1=Szia! Hallottam, hogy új tagunk lesz. Örülök, hogy a fedélzeten vagy! Remélem, szereted a változókat annyira, mint én. Van már kedvenc kódolási fogalmad? Ha nincs, biztos vagyok benne, hogy találni fogsz egyet.
+kid3.ship.intro1=Ez az új tag! Örülök, hogy találkoztunk. Tudtad, hogy a hajónk, a Hopper, szinte azonnal bármelyik küldetéshez el tud minket juttatni? Elég menő technológia, ugye? Az egész GameCode Crew-ra szükség volt, hogy ezt megvalósítsuk.
+kid4.ship.intro1=Nem mindig könnyű megoldani a problémákat kóddal. Ez az egyik oka annak, hogy mindig új tagokat keresünk, mint te. Nagyon örülünk, hogy itt vagy! Egy újabb számítási gondolkodó mindig jó dolog.
+kid5.ship.intro1=Üdvözöllek! Igazán szükségünk lett volna egy okos kódolóra, mint te, az utolsó küldetésünkön. Nem volt könnyű az egész ételkocsi-flotta szoftverhibáinak javítása. Annyi hiba volt a szoftverükben. Legalább a hibák nem voltak az ételben!
+kid6.ship.intro1=Jelenleg nagyon elakadtam egy kódolási problémában. Nem tudom eldönteni, hogy WHILE LOOP-ot vagy IF/ELSE állítást használjak-e. Fogadok, hogy ezt te meg fogod tudni oldani. Szerencsések vagyunk, hogy itt vagy!
+kid7.ship.intro1=Imádom a kódolási problémák megoldását. Néha csak egy nagy kirakósnak tűnik, amit össze kell rakni. Úgy látom, te is szereted a jó kirakósokat. Fogadok, hogy együtt igazán menő dolgokat fogunk kódolni!
 
-host.ship.intro6=Let's make our way to the teleporter room, it's time to get this mission started. We have to save the arcade! Let's go.
-host.ship.intro7=Next to me is your teleporter pad. Stand in the middle and it will teleport you inside the arcade! I'll meet you on the other side! Quickly now, we have a job to do!
+host.ship.intro6=Induljunk a teleportáló szobába, ideje elkezdeni ezt a küldetést. Meg kell mentenünk a játéktermet! Menjünk.
+host.ship.intro7=Mellettem van a teleportáló padod. Állj a közepére, és be fog teleportálni a játékterembe! Találkozunk a másik oldalon! Gyorsan, munkánk van!
 
-host.lobby.intro1=Oh my, it's dark in here. Don't be scared. Our ship must have used stealth mode to avoid the motion sensors. Let's try jumping to activate the lights.
-host.lobby.intro2=That worked! Wow, this place is amazing. It's hard to believe that something this beautiful is going extinct, but not if we can help!
+host.lobby.intro1=Ó, ez nagyon sötét itt. Ne félj. A hajónk valószínűleg lopakodó üzemmódot használt, hogy elkerülje a mozgásérzékelőket. Próbáljunk ugrani a lámpák aktiválásához.
+host.lobby.intro2=Sikerült! Wow, ez a hely csodálatos. Nehéz elhinni, hogy valami ilyen szép kihalófélben van, de nem, ha mi segíthetünk!
 
-host.ship.intro3=You can't do this work alone, so you've been assigned an agent to assist you. You're in charge. This agent will do whatever you tell it to do, but it only understands code. You'll need to speak its language to make it work.
-host.ship.intro4=We've been using agents to complete all our quests, so we will help you get started. You'll be working together on all your missions as part of the GameCode Crew.%1%1Let's introduce you to your agent.
+host.ship.intro3=Ezt a munkát nem tudod egyedül elvégezni, ezért kaptál egy ügynököt, aki segít neked. Te vagy a főnök. Ez az ügynök bármit megtesz, amit mondasz neki, de csak kódot ért. Meg kell tanulnod az ő nyelvén beszélni, hogy működjön.
+host.ship.intro4=Ügynököket használtunk minden küldetésünk teljesítéséhez, így segítünk neked az indulásban. Együtt fogtok dolgozni minden küldetésen a GameCode Crew részeként.%1%1Bemutatjuk neked az ügynöködet.
 
-host.lobby.intro4=Get to know your Agent by saying Hello! I'll load up a tutorial activity with your agent so you can greet them! Press the "C" key on your keyboard, or press the "Agent" icon at the top of your touchscreen device to open the activity. Come back and talk to me when you have completed this activity!
-host.lobby.intro4a=Press the "C" key on your keyboard, or press the "Agent" icon at the top of your touchscreen device to open the activity. Come back and talk to me when you have completed this activity!
-host.lobby.intro5=Did you get it working? Have you properly greeted your Agent and are you ready to move on to the next activity?
-host.lobby.intro6=Awesome! Now that you have met your agent, let's learn to code it together! We have some cleaning up to do before we start programming our games, so let's get to it!
+host.lobby.intro4=Ismerd meg az ügynöködet egy üdvözléssel! Betöltök egy bemutató tevékenységet az ügynököddel, hogy üdvözölhesd! Nyomd meg a "C" gombot a billentyűzeteden, vagy nyomd meg az "Agent" ikont a készüléked érintőképernyőjének tetején, hogy megnyisd a tevékenységet. Gyere vissza és beszélj velem, miután befejezted ezt a tevékenységet!
+host.lobby.intro4a=Nyomd meg a "C" gombot a billentyűzeteden, vagy nyomd meg az "Agent" ikont a készüléked érintőképernyőjének tetején, hogy megnyisd a tevékenységet. Gyere vissza és beszélj velem, miután befejezted ezt a tevékenységet!
+host.lobby.intro5=Sikerült? Megfelelően üdvözölted az ügynöködet, és készen állsz a következő tevékenységre?
+host.lobby.intro6=Nagyszerű! Most, hogy megismerted az ügynöködet, tanuljunk meg együtt kódolni! Van egy kis takarítási feladatunk, mielőtt elkezdenénk a játékaink programozását, így álljunk neki!
 
-tutnpc.lesson2.step1=For this task, we need the Agent to interact with the lever in front of it and turn on the redstone lamp. Let's start by having the agent move forward one block onto the gold block. I'll load up the activity with your agent!
-tutnpc.lesson2.step2=Great start! Next, let's break this dirt block that's in the way! Check in again with your agent by opening Code Builder for the next step!
-tutnpc.lesson2.step3=Too good! Lastly, let's get the agent to interact with that lever to turn on the redstone lamp! You will need to move your agent forward one block first!
-tutnpc.lesson2.step4=Amazing! You did it! Let's move on to the next task! We still have a lot to get working!
-tutnpc.lesson3.step1=The circuit board next to us seems to not be working. It looks like it needs power. Let's get your agent to place a redstone block to connect the board to the power supply!
-tutnpc.lesson3.step2=Such good work! But uh oh! It looks like the board still isn't working, let's move on to the next task and see if we can get it up and running!
-tutnpc.lesson4.step1=Oh no! All these dirt blocks and cobwebs are blocking up our board! Let's see if you can use your agent to help clean all of these out and get our board working again!
-tutnpc.lesson4.step2=Magnificent! It looks like the board is in working condition now! Thank you! Let's move on to the next task! Just a few more things to activate!
-tutnpc.lesson5.step1=We need to fix this circuit board. It looks like there is some gross, slimy, gunk along the edge. Can you use your agent to destroy just the slime blocks to fix the circuit board without destroying the levers?
-tutnpc.lesson5.oops=Oops! It looks like your Agent has reached the correct spot, but the circuit board doesn't look quite right! Remember, you need to remove only the slime blocks, and leave the levers so the whole circuit board is active!
-tutnpc.lesson5.step2=Wonderful! Now this circuit board is clear and all the lights are on! There is only one last task left in the tutorial! We are so close!
-tutnpc.lesson6.step1=This circuit board is supposed to have have components that match on both sides. But it looks like this board is missing components on one side. Let's help the agent detect the block on the right and copy them onto their left.
-tutnpc.lesson6.step2=Phenomenal! It looks like we've got all the parts working, but the game code was lost. To get this arcade running, we'll have to code each of these machines ourselves. Sounds like the perfect task for the GameCode Crew. Let's head back to the lobby!
+tutnpc.lesson2.step1=Ehhez a feladathoz az ügynöknek interakcióba kell lépnie az előtte lévő karal és be kell kapcsolnia a vöröskő lámpát. Kezdjük azzal, hogy az ügynök előrelép egy blokkot az aranyblokkra. Betöltöm az ügynököddel a tevékenységet!
+tutnpc.lesson2.step2=Remek kezdés! Következő lépésként törjük meg ezt a földblokkot, ami az útban van! Lépj kapcsolatba az ügynököddel a Kódoló Ablak megnyitásával a következő lépéshez!
+tutnpc.lesson2.step3=Túl jó! Végül, az ügynököt a karral való interakcióra kell bírni, hogy bekapcsolja a vöröskő lámpát! Először előre kell mozgatnod az ügynöködet egy blokkot!
+tutnpc.lesson2.step4=Csodálatos! Sikerült! Térjünk át a következő feladatra! Még sok mindent meg kell működésbe hoznunk!
+tutnpc.lesson3.step1=Úgy tűnik, hogy a melletti áramkör nem működik. Úgy tűnik, áramra van szüksége. Helyezzük az ügynököt egy vöröskő blokkot, hogy az áramkört csatlakoztassuk az áramforráshoz!
+tutnpc.lesson3.step2=Nagyszerű munka! De oh! Úgy tűnik, hogy az áramkör még mindig nem működik, térjünk át a következő feladatra, és nézzük meg, hogy be tudjuk-e indítani!
+tutnpc.lesson4.step1=Ó, nem! Ezek a földblokkok és pókhálók eltömítik az áramkörünket! Nézzük meg, tudsz-e segíteni az ügynököddel, hogy kitisztítsa ezeket, és működésbe hozza az áramkört!
+tutnpc.lesson4.step2=Magnificent! Úgy tűnik, hogy az áramkör most már működik! Köszönöm! Térjünk át a következő feladatra! Már csak néhány dolgot kell aktiválni!
+tutnpc.lesson5.step1=Meg kell javítanunk ezt az áramkört. Úgy tűnik, hogy van valami undorító, nyálkás anyag a szélén. Használhatod az ügynöködet, hogy csak a nyálka blokkokat távolítsd el, és ne rombold le a karokat?
+tutnpc.lesson5.oops=Hoppá! Úgy tűnik, hogy az ügynököd elérte a megfelelő helyet, de az áramkör nem tűnik teljesen helyesnek! Ne feledd, csak a nyálka blokkokat kell eltávolítanod, és hagynod kell a karokat, hogy az egész áramkör működjön!
+tutnpc.lesson5.step2=Csodálatos! Most már ez az áramkör tiszta, és minden lámpa világít! Már csak egy feladat maradt a bemutatóban! Nagyon közel vagyunk!
+tutnpc.lesson6.step1=Ennek az áramkörnek mindkét oldalon azonos alkatrészekkel kellene rendelkeznie. De úgy tűnik, hogy az áramkör hiányzik egyes alkatrészek egy oldalról. Segítsünk az ügynöknek felismerni a jobb oldalon lévő blokkot, és másoljuk át a bal oldalra.
+tutnpc.lesson6.step2=Fenomális! Úgy tűnik, hogy minden alkatrész működik, de a játék kódja elveszett. Ahhoz, hogy ezt a játéktermet működésbe hozzuk, mindegyik gépet kódolnunk kell. Úgy hangzik, hogy ez a GameCode Crew feladata. Térjünk vissza a lobbyba!
 
-host.lobby.intro7=You and your agent seem well acquainted! You have now unlocked all of the arcade machines! Our crew has designed some new games to load into these machines. Visit each arcade machine to meet a crew member and help them code their game.
-tuttable.lobby.2=You have already completed the tutorial! Congratulations! If you would like to re-do the tutorial, launch a new copy of the world!
+host.lobby.intro7=Te és az ügynököd jól megismerkedtetek! Most már minden játékgép feloldva! A csapatunk néhány új játékot tervezett ezekbe a gépekbe. Látogass el minden játékgéphez, hogy találkozz egy csapattaggal, és segíts nekik kódolni a játékukat.
+tuttable.lobby.2=Már befejezted a bemutatót! Gratulálok! Ha újra szeretnéd végezni a bemutatót, indíts el egy új példányt a világból!
 
+tuttable.lobby.1=Szia! Kezdjünk el tanulni!
+parkour.lobby.1=Ebben a játékban saját parkour pályát tervezhetsz, és létrehozhatsz egy pontozási rendszert az alapján, hogy mennyi idő alatt teljesíted a pályát!%1%1Nehézség: Kezdő
+hideandseek.lobby.1=Ebben a játékban kódolhatod az ügynöködet, hogy létrehozzon egy bújócska szerkezetet, majd megpróbálhatod megtalálni az ügynöködet, amikor elbújik.%1%1Nehézség: Középhaladó
+rockpaperscissors.lobby.1=Ebben a játékban a Minecraft verzióját játszhatod a kő-papír-ollónak: kő-láva-jég. Ki tudod játszani az ügynöködet és meg tudod tenni a helyes választást?%1%1Nehézség: Középhaladó 
+aimtrainer.lobby.1=Ebben a játékban tesztelheted és fejlesztheted a célzásodat. Az ügynök célpontokat fog elhelyezni a játékterületen. A te feladatod, hogy a lehető leggyorsabban eltaláld ezeket a célpontokat! Tudod javítani a legjobb idődet?%1%1Nehézség: Haladó
+dunktank.lobby.1=Ebben a játékban megpróbálsz kitalálni egy számot 1 és 100 között, mielőtt a falusi a vízbe kerül! Használd a logikádat, hogy megmentsd a falusit, mielőtt elázik!%1%1Nehézség: Haladó
+buildyourown.lobby.1=Itt saját játékot tervezhetsz és építhetsz, az összes megszerzett készséged és saját kreativitásod felhasználásával!%1%1Nehézség: Rajtad áll!
 
+parkour.game.1=Üdvözlünk a Parkour játékban! Kövesd a videókat és az oktatói útmutatókat, amelyeket a mellettem lévő csapattag biztosít, hogy befejezd ezt a játékot!%1%1Itt visszaállíthatod az építést, bekapcsolhatod a gépet, visszatérhetsz a lobbyba, vagy bezárhatod és folytathatod saját pályád tervezését! 
+parkour.game.reset=Biztos vagy benne, hogy vissza akarod állítani ezt a területet? Ez eltávolítja az egész parkour építést, és újra kell kezdened.
+parkour.npc.1=Üdvözöllek a Parkour játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
+parkour.npc.intro=Üdvözöllek a Parkour játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
 
-tuttable.lobby.1=Hi! Let's get learning!
-parkour.lobby.1=In this game, you will design your own Parkour course and create a scoring system based on the time taken to complete the course!%1%1Difficulty: Introductory
-hideandseek.lobby.1=In this game, you will program your agent to create a hide and seek structure and then attempt to find your agent as they hide.%1%1Difficulty: Intermediate
-rockpaperscissors.lobby.1=In this game, you will play a Minecraft version of Rock-Paper-Scissors: Stone Lava Ice. Can you outwit your agent and make the right choice?%1%1Difficulty: Intermediate 
-aimtrainer.lobby.1=In this game, you will test and train your aim. The agent will place targets around the play area. Your job is to hit those targets as fast as possible! Can you improve your best time?%1%1Difficulty: Advanced
-dunktank.lobby.1=In this game, you try to guess a number between 1 and 100 before the villager gets dunked! Use your logic to save the villager before they end up all wet!%1%1Difficulty: Advanced
-buildyourown.lobby.1=Here you can design and build your own game using all the skills you have learned and your own creativity!%1%1Difficulty: It's up to you!
+hideandseek.game.1=Üdvözöllek a Bújócska játékban! Kövesd a videókat és az oktatói útmutatókat, amelyeket a mellettem lévő csapattag biztosít, hogy befejezd ezt a játékot!%1%1Itt visszaállíthatod az építést, bekapcsolhatod a gépet, visszatérhetsz a lobbyba, vagy bezárhatod és folytathatod saját játékod tervezését! 
+hideandseek.game.reset=Biztos vagy benne, hogy vissza akarod állítani ezt a területet? Ez eltávolítja az egész építést, és újra kell kezdened.
+hideandseek.npc.1=Üdvözöllek a Bújócska játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
+hideandseek.npc.intro=Üdvözöllek a Bújócska játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
 
+rockpaperscissors.game.1=Üdvözöllek a Kő-Papír-Olló játékban! Kövesd a videókat és az oktatói útmutatókat, amelyeket a mellettem lévő csapattag biztosít, hogy befejezd ezt a játékot!%1Itt visszaállíthatod az építést, bekapcsolhatod a gépet, visszatérhetsz a lobbyba, vagy bezárhatod és folytathatod saját játékod tervezését! 
+rockpaperscissors.game.reset=Biztos vagy benne, hogy vissza akarod állítani ezt a területet? Ez eltávolítja az egész építést, és újra kell kezdened.
+rockpaperscissors.npc.1=Üdvözöllek a Kő-Papír-Olló játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
+rockpaperscissors.npc.intro=Üdvözöllek a Kő-Papír-Olló játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
 
+aimtrainer.game.1=Üdvözöllek a Célzás Tréner játékban! Kövesd a videókat és az oktatói útmutatókat, amelyeket a mellettem lévő csapattag biztosít, hogy befejezd ezt a játékot!%1%1Itt visszaállíthatod az építést, bekapcsolhatod a gépet, visszatérhetsz a lobbyba, vagy bezárhatod és folytathatod saját játékod tervezését! 
+aimtrainer.game.reset=Biztos vagy benne, hogy vissza akarod állítani ezt a területet? Ez eltávolítja az egész építést, és újra kell kezdened.
+aimtrainer.npc.1=Üdvözöllek a Célzás Tréner játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
+aimtrainer.npc.intro=Üdvözöllek a Célzás Tréner játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
 
-parkour.game.1=Welcome to the Parkour game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your own course! 
-parkour.game.reset=Are you sure you want to reset this area? This will remove your entire parkour build, and you will have to start again.
-parkour.npc.1=Welcome to the Parkour arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-parkour.npc.intro=Welcome to the Parkour arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+dunktank.game.1=Üdvözöllek a Dunk Tank játékban! Kövesd a videókat és az oktatói útmutatókat, amelyeket a mellettem lévő csapattag biztosít, hogy befejezd ezt a játékot!%1%1Itt visszaállíthatod az építést, bekapcsolhatod a gépet, visszatérhetsz a lobbyba, vagy bezárhatod és folytathatod saját játékod tervezését! 
+dunktank.game.reset=Biztos vagy benne, hogy vissza akarod állítani ezt a területet? Ez eltávolítja az egész építést, és újra kell kezdened.
+dunktank.npc.1=Üdvözöllek a Dunk Tank játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
+dunktank.npc.intro=Üdvözöllek a Dunk Tank játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
 
-hideandseek.game.1=Welcome to the Hide and Seek game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
-hideandseek.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
-hideandseek.npc.1=Welcome to the Hide and Seek arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-hideandseek.npc.intro=Welcome to the Hide and Seek arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-
-rockpaperscissors.game.1=Welcome to the Rock-Paper-Scissors game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
-rockpaperscissors.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
-rockpaperscissors.npc.1=Welcome to the Rock-Paper-Scissors arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-rockpaperscissors.npc.intro=Welcome to the Rock-Paper-Scissors arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-
-aimtrainer.game.1=Welcome to the Aim Trainer game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
-aimtrainer.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
-aimtrainer.npc.1=Welcome to the Aim Trainer arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-aimtrainer.npc.intro=Welcome to the Aim Trainer arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-
-dunktank.game.1=Welcome to the Dunk Tank game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
-dunktank.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
-dunktank.npc.1=Welcome to the Dunk Tank arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-dunktank.npc.intro=Welcome to the Dunk Tank arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-
-buildyourown.game.1=Welcome to the Build Your Own game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Return to Lobby, or Close and continue to design your game! 
-buildyourown.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
-buildyourown.npc.1=Welcome to the Build Your Own arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-buildyourown.npc.intro=Welcome to the Build Your Own arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
-
+buildyourown.game.1=Üdvözöllek az Építsd magad játékban! Kövesd a videókat és az oktatói útmutatókat, amelyeket a mellettem lévő csapattag biztosít, hogy befejezd ezt a játékot!%1%1Itt visszaállíthatod az építést, visszatérhetsz a lobbyba, vagy bezárhatod és folytathatod saját játékod tervezését! 
+buildyourown.game.reset=Biztos vagy benne, hogy vissza akarod állítani ezt a területet? Ez eltávolítja az egész építést, és újra kell kezdened.
+buildyourown.npc.1=Üdvözöllek az Építsd magad játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel. 
+buildyourown.npc.intro=Üdvözöllek az Építsd magad játékgépnél! Annak érdekében, hogy ezt a gépet működésbe hozzuk, biztosítottunk egy útmutatót, amelyet az alábbi gombbal nyithatsz meg. Beszélj velem bármikor, amikor szükséged van rá. A gép visszaállításához vagy visszatéréshez a lobbyba, lépj kapcsolatba a mellettem lévő játékgéppel.
 
 
 
