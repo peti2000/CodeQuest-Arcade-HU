@@ -1,0 +1,50 @@
+{
+    "format_version": "1.14.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "cleverlike:marker",
+        "is_spawnable": false,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+      "components": {
+        "minecraft:breathable": {
+          "totalSupply": 15,
+          "suffocateTime": 0
+        },
+        "minecraft:nameable": {},
+        "minecraft:health": {
+          "value": 200,
+          "max": 200
+        },
+        "minecraft:scale": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 0,
+          "height": 0
+        },
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+  
+        "minecraft:type_family": {
+          "family": ["marker"]
+        },
+        "minecraft:jump.static": {},
+        "minecraft:behavior.float": {
+          "priority": 0
+        },
+        "minecraft:physics": {},
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "deals_damage": false
+          }
+        }
+      }
+  }
+}
+  

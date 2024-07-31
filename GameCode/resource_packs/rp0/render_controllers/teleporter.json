@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.0",
+	"render_controllers": {
+	  "controller.render.teleporter": {
+
+		"materials": [{ "*": "Material.default" }],
+		"geometry": "Geometry.default",
+		"textures": [ "Texture.default" ],
+		"uv_anim": {
+		  "offset": [0, "Math.mod(Math.floor(query.life_time * 16),16)/16"],
+		  "scale": [1, "1/16"]
+		}
+	  }
+	}
+  }
+  

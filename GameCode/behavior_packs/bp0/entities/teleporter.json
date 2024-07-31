@@ -1,0 +1,47 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cleverlike:teleporter",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:health": {
+        "value": 1,
+        "max": 1,
+        "min": 1
+      },
+      "minecraft:type_family": {
+        "family": ["mob"]
+      },
+      "minecraft:collision_box": {
+        "height": 1.0,
+        "width": 1.0
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true,
+        "breathes_solids": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    }
+  }
+}

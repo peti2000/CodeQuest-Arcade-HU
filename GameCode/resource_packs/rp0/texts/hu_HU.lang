@@ -1,0 +1,359 @@
+pack.name=GameCode HU
+pack.description=By Cleverlike Studios, Cronomit Group
+
+action.hint.exit.cleverlike:scenerider=§r
+
+999=Hello
+## Buttons 
+button.close=Bezár
+button.returntolobby=Visszatérés a Lobbyba
+button.reset=Újrakezd
+button.confirm=Ok
+button.cancel=Mégse
+button.next=Következő
+button.gotoagent=Robi üdvözlése
+button.start=Start
+button.gotocabinet=Code This Game
+button.nextactivity=Következő feladat
+button.openguide=Útmutató megnyitása
+button.skiptutorial=Útmutató kihagyása
+button.turnon=Bekapcsolás
+button.meetcrew=Ismerd meg a csapatot
+button.alreadymet=Már ismerem őket
+button.tryagain=Újrakezdés
+button.tutorialvideo=Tutorial Video
+
+## Entity Names
+tuttable.name=1. Útmutató tábla
+parkour.name=2. Parkour
+hideandseek.name=3. Bújócska
+rockpaperscissors.name=4. Kő-papír-olló
+aimtrainer.name=5. Célzás tréner
+dunktank.name=6. Dunk Tank
+buildyourown.name=7. Építsd magad
+tutnpc.name=Tutorial
+host.name=Mikenna Kapitány
+parkour.npc.name=Balvinder
+hideandseek.npc.name=Diego
+rockpaperscissors.npc.name=Jade
+aimtrainer.npc.name=Jamie
+dunktank.npc.name=Leilani
+buildyourown.npc.name=Bayan
+kid2.name=Bayan
+kid3.name=Jamie
+kid4.name=Jade
+kid5.name=Balvinder
+kid6.name=Diego
+kid7.name=Leilani
+makecodenode.name=Make Code Node
+alarm.name=RIADÓ
+button.tutorialvideos=Tutorial Videos
+button.rubric=Project Rubric
+
+
+## Titles
+
+intro.title=Game Code
+intro.subtitle=Mentsd meg a a játéktermet
+
+## Actionbars
+actionbar.intro.skip=§eUgorj, hogy átugord a videót
+actionbar.ship.move=§eMozogj, hogy elkezdődjön a játék
+actionbar.ship.meetkids1=§eIsmerd meg a csapatot §f(§f
+actionbar.ship.meetkids2=§f/6)
+actionbar.ship.talktohost=§eBeszélj Mikenna kapitánnyal
+actionbar.ship.followhost=§eKövesd Mikenna kapitányt
+actionbar.ship.teleport=§eLépj a teleportáló padra
+actionbar.lobby.jump=§eUgorj a lámpák felkapcsolásához
+actionbar.lobby.summonagent=§eKövesd a táblán látható utasításokat
+actionbar.lobby.nameagent=§eKövesd a táblán látható utasításokat
+actionbar.lobby.talktotable=§eBeszélj az útmutató táblával
+actionbar.lobby.pickgamemode=§eVálassz játékgépet
+
+actionbar.tut1.1=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+actionbar.tut2.1=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+actionbar.tut3.1=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+actionbar.tut4.1=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+actionbar.tut5.1=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+actionbar.tut6.1=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+actionbar.tut7.1=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+
+actionbar.tut1.2=§62. §rÚtmutató elolvasása
+actionbar.tut2.2=§62. §rÚtmutató befejezése
+actionbar.tut3.2=§62. §rÚtmutató befejezése
+actionbar.tut4.2=§62. §rÚtmutató befejezése
+actionbar.tut5.2=§62. §rÚtmutató befejezése
+actionbar.tut6.2=§62. §rÚtmutató befejezése
+actionbar.tut7.2=§62. §rÚtmutató befejezése
+
+actionbar.tut1.3=§e3. §rNyomd meg a Lejátszás gombot
+actionbar.tut2.3=§e3. §rNyomd meg a Lejátszás gombot
+actionbar.tut3.3=§e3. §rNyomd meg a Lejátszás gombot
+actionbar.tut4.3=§e3. §rNyomd meg a Lejátszás gombot
+actionbar.tut5.3=§e3. §rNyomd meg a Lejátszás gombot
+actionbar.tut6.3=§e3. §rNyomd meg a Lejátszás gombot
+actionbar.tut7.3=§e3. §rNyomd meg a Lejátszás gombot
+
+actionbar.tut1.4=§a4. §rChat megnyitása
+actionbar.tut2.4=§a4. §rChat megnyitása
+actionbar.tut3.4=§a4. §rChat megnyitása
+actionbar.tut4.4=§a4. §rChat megnyitása
+actionbar.tut5.4=§a4. §rChat megnyitása
+actionbar.tut6.4=§a4. §rChat megnyitása
+actionbar.tut7.4=§a4. §rChat megnyitása
+
+actionbar.tut1.5=§b5. §rÍrd be: "mozog"
+actionbar.tut2.5=§b5. §rÍrd be: "rombol"
+actionbar.tut3.5=§b5. §rÍrd be: "interakcio"
+actionbar.tut4.5=§b5. §rÍrd be: "lerak"
+actionbar.tut5.5=§b5. §rÍrd be: "tiszta"
+actionbar.tut6.5=§b5. §rÍrd be: "javit"
+actionbar.tut7.5=§b5. §rÍrd be: "masol"
+
+actionbar.tut1.6=§d6. §rKüldés
+actionbar.tut2.6=§d6. §rKüldés
+actionbar.tut3.6=§d6. §rKüldés
+actionbar.tut4.6=§d6. §rKüldés
+actionbar.tut5.6=§d6. §rKüldés
+actionbar.tut6.6=§d6. §rKüldés
+actionbar.tut7.6=§d6. §rKüldés
+
+actionbar.tut1.old=§eKövesd a táblán lévő utasításokat
+actionbar.tut2.old=§eKövesd a táblán lévő utasításokat
+actionbar.tut3.old=§eKövesd a táblán lévő utasításokat
+actionbar.tut4.old=§eKövesd a táblán lévő utasításokat
+actionbar.tut5.old=§eKövesd a táblán lévő utasításokat
+actionbar.tut6.old=§eKövesd a táblán lévő utasításokat
+actionbar.tut7.old=§eKövesd a táblán lévő utasításokat
+
+## Boards
+
+board.tut0.line1=§r
+board.tut0.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+board.tut0.line3=§r
+board.tut0.line4=§62. §rÚtmutató elolvasása
+board.tut0.line5=§r
+board.tut0.line6=§e3. §rNyomd meg a Lejátszás gombot
+board.tut0.line7=§r
+board.tut0.line8=§a4. §rBeszélj Mikenna kapitánnyal
+board.tut0.line9=§r
+board.tut0.line10=§r
+board.tut0.line11=§r
+board.tut0.line12=§r
+board.tut0.line13=§r
+board.tut0.line14=§r
+board.tut0.line15=§r
+
+board.tut1.line1=§r
+board.tut1.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+board.tut1.line3=§r
+board.tut1.line4=§62. §rÚtmutató elolvasása
+board.tut1.line5=§r
+board.tut1.line6=§e3. §rNyomd meg a Lejátszás gombot
+board.tut1.line7=§r
+board.tut1.line8=§a4. §rNyisd meg a chatet
+board.tut1.line9=§r
+board.tut1.line10=§b5. §rÍrd be: "mozog"
+board.tut1.line11=§r
+board.tut1.line12=§d6. §rKüldés
+board.tut1.line13=§r
+board.tut1.line14=Ha segítség kell, beszélj Mikenna kapitánnyal
+board.tut1.line15=§r
+
+board.tut2.line1=§r
+board.tut2.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+board.tut2.line3=§r
+board.tut2.line4=§62. §rÚtmutató befejezése
+board.tut2.line5=§r
+board.tut2.line6=§e3. §rNyomd meg a Lejátszás gombot
+board.tut2.line7=§r
+board.tut2.line8=§a4. §rNyisd meg a chatet
+board.tut2.line9=§r
+board.tut2.line10=§b5. §rÍrd be: "rombol"
+board.tut2.line11=§r
+board.tut2.line12=§d6. §rKüldés
+board.tut2.line13=§r
+board.tut2.line14=Ha segítség kell, beszélj Mikenna kapitánnyal
+board.tut2.line15=§r
+
+board.tut3.line1=§r
+board.tut3.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+board.tut3.line3=§r
+board.tut3.line4=§62. §rÚtmutató befejezése
+board.tut3.line5=§r
+board.tut3.line6=§e3. §rNyomd meg a Lejátszás gombot
+board.tut3.line7=§r
+board.tut3.line8=§a4. §rNyisd meg a chatet
+board.tut3.line9=§r
+board.tut3.line10=§b5. §rÍrd be: "interakcio"
+board.tut3.line11=§r
+board.tut3.line12=§d6. §rKüldés
+board.tut3.line13=§r
+board.tut3.line14=Ha segítség kell, beszélj Mikenna kapitánnyal
+board.tut3.line15=§r
+
+board.tut4.line1=§r
+board.tut4.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+board.tut4.line3=§r
+board.tut4.line4=§62. §rÚtmutató befejezése
+board.tut4.line5=§r
+board.tut4.line6=§e3. §rNyomd meg a Lejátszás gombot
+board.tut4.line7=§r
+board.tut4.line8=§a4. §rNyisd meg a chatet
+board.tut4.line9=§r
+board.tut4.line10=§b5. §rÍrd be: "lerak"
+board.tut4.line11=§r
+board.tut4.line12=§d6. §rKüldés
+board.tut4.line13=§r
+board.tut4.line14=Ha segítség kell, beszélj Mikenna kapitánnyal
+board.tut4.line15=§r
+
+board.tut5.line1=§r
+board.tut5.line2=§c1. §rNyomd meg a "C" gombot a kódoló ablak megnyitásához
+board.tut5.line3=§r
+board.tut5.line4=§62. §rÚtmutató befejezése
+board.tut5.line5=§r
+board.tut5.line6=§e3. §rPress Play Button
+board.tut5.line7=§r
+board.tut5.line8=§a4. §rOpen Chat
+board.tut5.line9=§r
+board.tut5.line10=§b5. §rType "clean"
+board.tut5.line11=§r
+board.tut5.line12=§d6. §rSend
+board.tut5.line13=§r
+board.tut5.line14=For HELP, or to RESET, speak to Captain Mikenna behind you
+board.tut5.line15=§r
+
+board.tut6.line1=§r
+board.tut6.line2=§c1. §rPress "C", or the  Icon to open Code Builder
+board.tut6.line3=§r
+board.tut6.line4=§62. §rComplete Tutorial
+board.tut6.line5=§r
+board.tut6.line6=§e3. §rPress Play Button
+board.tut6.line7=§r
+board.tut6.line8=§a4. §rOpen Chat
+board.tut6.line9=§r
+board.tut6.line10=§b5. §rType "fix"
+board.tut6.line11=§r
+board.tut6.line12=§d6. §rSend
+board.tut6.line13=§r
+board.tut6.line14=For HELP, or to RESET, speak to Captain Mikenna behind you
+board.tut6.line15=§r
+
+board.tut7.line1=§r
+board.tut7.line2=§c1. §rPress "C", or the  Icon to open Code Builder
+board.tut7.line3=§r
+board.tut7.line4=§62. §rComplete Tutorial
+board.tut7.line5=§r
+board.tut7.line6=§e3. §rPress Play Button
+board.tut7.line7=§r
+board.tut7.line8=§a4. §rOpen Chat
+board.tut7.line9=§r
+board.tut7.line10=§b5. §rType "copy"
+board.tut7.line11=§r
+board.tut7.line12=§d6. §rSend
+board.tut7.line13=§r
+board.tut7.line14=For HELP, or to RESET, speak to Captain Mikenna behind you
+board.tut7.line15=§r
+
+## Dialogue
+host.ship.preintro1=So glad you are here! My name is Mikenna, Captain of our ship, The Hopper. Our group, the GameCode Crew, is always looking for new members to help us solve problems using our computer science knowhow. Welcome aboard!
+host.ship.preintro2=The members of the GameCode Crew come from all over the world, but The Hopper is our mobile headquarters. Why don't you take this time to familiarize yourself with the ship and meet the rest of the crew. I am sure they'll be excited to meet you.
+host.ship.preintro3=Glad you had the chance to meet the GameCode Crew. We really love working as a team so we are going to be here to help you every step of the way.
+makecodenode.ship.intro1=If you see this icon, it means that a team member has important information to help you on your coding missions.
+
+alarm.ship.intro1=*ALERT ALERT ALERT*
+host.ship.intro1=The Alarm! According to our sensors, the GameCode Crew is being summoned to save a dying arcade. This challenge is going to need the help of a gamer that can fix these old machines and create new games that their friends would love to play. We're so glad you're the one that came to help!
+host.ship.intro2=There's lots to do. If we don't get these machines working, they'll be trashed in the creeper pit and the space will be turned into a storage room.
+
+kid2.ship.intro1=Hey there! Heard we might be getting a new member. Glad to have you aboard! Hope you love using variables as much as I do. Do you have a favorite coding concept yet? If not, I'm sure you'll discover one. 
+kid3.ship.intro1=It's the new member! Pleasure to meet you. Did you know our ship, The Hopper, can take us to any mission almost instantly? Pretty cool tech, huh? It took the entire GameCode Crew to make it happen.
+kid4.ship.intro1=It's not always easy solving problems with code. That's one reason why we are always looking for new members like you. So happy to have you here! One more computational thinker is always a good thing.
+kid5.ship.intro1=Welcome! We could have really used a smart coder like you on our last mission. It wasn't easy getting that whole fleet of food trucks back up and running. There were so many bugs in their software. At least the bugs weren't in the food!
+kid6.ship.intro1=I'm really stuck on this coding problem right now. I can't decide whether to use a WHILE LOOP or an IF/ELSE statement. I bet that's something you are going to be able to help me solve. We are lucky to have you!
+kid7.ship.intro1=I love solving coding problems. Sometimes it just feels like a big puzzle waiting to be put together. You look like you love a good puzzle too. I bet we will code some really cool stuff together!
+
+host.ship.intro6=Let's make our way to the teleporter room, it's time to get this mission started. We have to save the arcade! Let's go.
+host.ship.intro7=Next to me is your teleporter pad. Stand in the middle and it will teleport you inside the arcade! I'll meet you on the other side! Quickly now, we have a job to do!
+
+host.lobby.intro1=Oh my, it's dark in here. Don't be scared. Our ship must have used stealth mode to avoid the motion sensors. Let's try jumping to activate the lights.
+host.lobby.intro2=That worked! Wow, this place is amazing. It's hard to believe that something this beautiful is going extinct, but not if we can help!
+
+host.ship.intro3=You can't do this work alone, so you've been assigned an agent to assist you. You're in charge. This agent will do whatever you tell it to do, but it only understands code. You'll need to speak its language to make it work.
+host.ship.intro4=We've been using agents to complete all our quests, so we will help you get started. You'll be working together on all your missions as part of the GameCode Crew.%1%1Let's introduce you to your agent.
+
+host.lobby.intro4=Get to know your Agent by saying Hello! I'll load up a tutorial activity with your agent so you can greet them! Press the "C" key on your keyboard, or press the "Agent" icon at the top of your touchscreen device to open the activity. Come back and talk to me when you have completed this activity!
+host.lobby.intro4a=Press the "C" key on your keyboard, or press the "Agent" icon at the top of your touchscreen device to open the activity. Come back and talk to me when you have completed this activity!
+host.lobby.intro5=Did you get it working? Have you properly greeted your Agent and are you ready to move on to the next activity?
+host.lobby.intro6=Awesome! Now that you have met your agent, let's learn to code it together! We have some cleaning up to do before we start programming our games, so let's get to it!
+
+tutnpc.lesson2.step1=For this task, we need the Agent to interact with the lever in front of it and turn on the redstone lamp. Let's start by having the agent move forward one block onto the gold block. I'll load up the activity with your agent!
+tutnpc.lesson2.step2=Great start! Next, let's break this dirt block that's in the way! Check in again with your agent by opening Code Builder for the next step!
+tutnpc.lesson2.step3=Too good! Lastly, let's get the agent to interact with that lever to turn on the redstone lamp! You will need to move your agent forward one block first!
+tutnpc.lesson2.step4=Amazing! You did it! Let's move on to the next task! We still have a lot to get working!
+tutnpc.lesson3.step1=The circuit board next to us seems to not be working. It looks like it needs power. Let's get your agent to place a redstone block to connect the board to the power supply!
+tutnpc.lesson3.step2=Such good work! But uh oh! It looks like the board still isn't working, let's move on to the next task and see if we can get it up and running!
+tutnpc.lesson4.step1=Oh no! All these dirt blocks and cobwebs are blocking up our board! Let's see if you can use your agent to help clean all of these out and get our board working again!
+tutnpc.lesson4.step2=Magnificent! It looks like the board is in working condition now! Thank you! Let's move on to the next task! Just a few more things to activate!
+tutnpc.lesson5.step1=We need to fix this circuit board. It looks like there is some gross, slimy, gunk along the edge. Can you use your agent to destroy just the slime blocks to fix the circuit board without destroying the levers?
+tutnpc.lesson5.oops=Oops! It looks like your Agent has reached the correct spot, but the circuit board doesn't look quite right! Remember, you need to remove only the slime blocks, and leave the levers so the whole circuit board is active!
+tutnpc.lesson5.step2=Wonderful! Now this circuit board is clear and all the lights are on! There is only one last task left in the tutorial! We are so close!
+tutnpc.lesson6.step1=This circuit board is supposed to have have components that match on both sides. But it looks like this board is missing components on one side. Let's help the agent detect the block on the right and copy them onto their left.
+tutnpc.lesson6.step2=Phenomenal! It looks like we've got all the parts working, but the game code was lost. To get this arcade running, we'll have to code each of these machines ourselves. Sounds like the perfect task for the GameCode Crew. Let's head back to the lobby!
+
+host.lobby.intro7=You and your agent seem well acquainted! You have now unlocked all of the arcade machines! Our crew has designed some new games to load into these machines. Visit each arcade machine to meet a crew member and help them code their game.
+tuttable.lobby.2=You have already completed the tutorial! Congratulations! If you would like to re-do the tutorial, launch a new copy of the world!
+
+
+
+tuttable.lobby.1=Hi! Let's get learning!
+parkour.lobby.1=In this game, you will design your own Parkour course and create a scoring system based on the time taken to complete the course!%1%1Difficulty: Introductory
+hideandseek.lobby.1=In this game, you will program your agent to create a hide and seek structure and then attempt to find your agent as they hide.%1%1Difficulty: Intermediate
+rockpaperscissors.lobby.1=In this game, you will play a Minecraft version of Rock-Paper-Scissors: Stone Lava Ice. Can you outwit your agent and make the right choice?%1%1Difficulty: Intermediate 
+aimtrainer.lobby.1=In this game, you will test and train your aim. The agent will place targets around the play area. Your job is to hit those targets as fast as possible! Can you improve your best time?%1%1Difficulty: Advanced
+dunktank.lobby.1=In this game, you try to guess a number between 1 and 100 before the villager gets dunked! Use your logic to save the villager before they end up all wet!%1%1Difficulty: Advanced
+buildyourown.lobby.1=Here you can design and build your own game using all the skills you have learned and your own creativity!%1%1Difficulty: It's up to you!
+
+
+
+parkour.game.1=Welcome to the Parkour game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your own course! 
+parkour.game.reset=Are you sure you want to reset this area? This will remove your entire parkour build, and you will have to start again.
+parkour.npc.1=Welcome to the Parkour arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+parkour.npc.intro=Welcome to the Parkour arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+
+hideandseek.game.1=Welcome to the Hide and Seek game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
+hideandseek.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
+hideandseek.npc.1=Welcome to the Hide and Seek arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+hideandseek.npc.intro=Welcome to the Hide and Seek arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+
+rockpaperscissors.game.1=Welcome to the Rock-Paper-Scissors game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
+rockpaperscissors.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
+rockpaperscissors.npc.1=Welcome to the Rock-Paper-Scissors arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+rockpaperscissors.npc.intro=Welcome to the Rock-Paper-Scissors arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+
+aimtrainer.game.1=Welcome to the Aim Trainer game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
+aimtrainer.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
+aimtrainer.npc.1=Welcome to the Aim Trainer arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+aimtrainer.npc.intro=Welcome to the Aim Trainer arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+
+dunktank.game.1=Welcome to the Dunk Tank game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Turn on the machine, Return to Lobby, or Close and continue to design your game! 
+dunktank.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
+dunktank.npc.1=Welcome to the Dunk Tank arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+dunktank.npc.intro=Welcome to the Dunk Tank arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+
+buildyourown.game.1=Welcome to the Build Your Own game! Follow along with the videos and student guides provided by the crew member next to me in order to complete this game!%1%1Here you can Reset your build, Return to Lobby, or Close and continue to design your game! 
+buildyourown.game.reset=Are you sure you want to reset this area? This will remove your entire build, and you will have to start again.
+buildyourown.npc.1=Welcome to the Build Your Own arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+buildyourown.npc.intro=Welcome to the Build Your Own arcade machine! In order to get this machine up and running, we've provided a guide which you can open from the button below. Speak to me anytime you need to access it. To reset the machine, or teleport back to the lobby, interact with the arcade machine next to me. 
+
+
+
+
+
+
+
+
+
+
+
+

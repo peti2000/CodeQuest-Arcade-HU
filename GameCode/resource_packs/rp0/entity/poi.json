@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "cleverlike:poi",
+        "spawn_egg": {
+          "base_color": "#DBC315",
+          "overlay_color": "#ED790C"
+        },
+        "render_controllers": ["controller.render.poi"],
+        "geometry": {
+          "default": "geometry.poi"
+        },
+        "textures": {
+          "default": "textures/entity/poi"
+        },
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "particle_effects": {
+          "poi_small": "cleverlike:poi_small",
+          "poi_npc": "cleverlike:npc_rings"
+        },
+        "animations": {
+          "default": "controller.animation.poi.default"
+        },
+        "scripts": {
+          "animate": ["default"]
+        }
+      }
+    }
+  }

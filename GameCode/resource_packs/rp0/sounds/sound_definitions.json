@@ -1,0 +1,123 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"cleverlike.alarm": {
+			"category": "ui",
+			"sounds": [
+			  {
+				"name": "sounds/alarm",
+				"volume": 0.4,
+				"weight": 1
+			  }
+			]
+		  },
+		  "cleverlike.space": {
+			"category": "ui",
+			"sounds": [
+			  {
+				"name": "sounds/space",
+				"volume": 0.4,
+				"weight": 1
+			  }
+			]
+		  },
+		  "cleverlike.spaceoutside": {
+			"category": "ui",
+			"sounds": [
+			  {
+				"name": "sounds/spaceoutside",
+				"volume": 0.4,
+				"weight": 1
+			  }
+			]
+		  },
+		  "cleverlike.turnon": {
+			"category": "ui",
+			"sounds": [
+			  {
+				"name": "sounds/turnon",
+				"volume": 0.4,
+				"weight": 1
+			  }
+			]
+		  },
+		  "cleverlike.success": {
+			"category": "ui",
+			"sounds": [
+			  {
+				"name": "sounds/success",
+				"volume": 0.4,
+				"weight": 1
+			  }
+			]
+		  },
+		  "cleverlike.fastsuccess": {
+			"category": "ui",
+			"sounds": [
+			  {
+				"name": "sounds/fastsuccess",
+				"volume": 0.4,
+				"weight": 1
+			  }
+			]
+		  },
+		"armor.equip_generic" : {
+			"__use_legacy_max_distance" : "true",
+			"category" : "player",
+			"sounds" : [
+
+			]
+		 },
+		"ambient.cave": {
+		  "category": "ambient",
+		  "sounds": []
+		},
+		"music.game": {
+		  "__use_legacy_max_distance": true,
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.creative": {
+		  "__use_legacy_max_distance": true,
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.credits": {
+		  "__use_legacy_max_distance": true,
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.crimson_forest": {
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.end": {
+		  "__use_legacy_max_distance": true,
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.endboss": {
+		  "__use_legacy_max_distance": true,
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.nether": {
+		  "__use_legacy_max_distance": true,
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.nether_wastes": {
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.soulsand_valley": {
+		  "category": "music",
+		  "sounds": []
+		},
+		"music.game.water": {
+		  "__use_legacy_max_distance": true,
+		  "category": "music",
+		  "sounds": []
+		}
+	}
+}

@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.poi.default": {
+        "states": {
+          "default": {
+            "transitions": [
+              {
+                "poi_small": "query.variant == 0"
+              },
+              {
+                "poi_npc": "query.variant == 1"
+              }
+            ]
+          },
+          "poi_small":{
+            "particle_effects": [
+              {
+                "effect": "poi_small"
+              }
+            ],
+            "transitions": [
+              {
+                "poi_npc": "query.variant == 1"
+              }
+            ]
+          },
+          "poi_npc":{
+            "particle_effects": [
+              {
+                "effect": "poi_npc"
+              }
+            ],
+            "transitions": [
+              {
+                "poi_small": "query.variant == 0"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+  

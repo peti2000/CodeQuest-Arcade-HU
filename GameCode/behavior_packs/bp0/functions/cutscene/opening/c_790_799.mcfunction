@@ -1,0 +1,9 @@
+execute if score @e[tag=main,c=1] keyframe matches 790 run tp @e[tag=scenerider,c=1] 2937.75908 179.5494 21.24961 275.22957 30
+execute if score @e[tag=main,c=1] keyframe matches 791 run tp @e[tag=scenerider,c=1] 2937.61688 179.54942 21.22379 275.22861 30
+execute if score @e[tag=main,c=1] keyframe matches 792 run tp @e[tag=scenerider,c=1] 2937.47468 179.54944 21.19798 275.22766 30
+execute if score @e[tag=main,c=1] keyframe matches 793 run tp @e[tag=scenerider,c=1] 2937.33248 179.54946 21.17216 275.2267 30
+execute if score @e[tag=main,c=1] keyframe matches 794 run tp @e[tag=scenerider,c=1] 2937.19028 179.54949 21.14634 275.22575 30
+execute if score @e[tag=main,c=1] keyframe matches 795 run tp @e[tag=scenerider,c=1] 2937.04808 179.54951 21.12052 275.22479 30
+execute if score @e[tag=main,c=1] keyframe matches 796 run tp @e[tag=scenerider,c=1] 2936.90588 179.54953 21.0947 275.22383 30
+execute if score @e[tag=main,c=1] keyframe matches 797 run tp @e[tag=scenerider,c=1] 2936.76368 179.54955 21.06889 275.22288 30
+execute if score @e[tag=main,c=1] keyframe matches 798 run tp @e[tag=scenerider,c=1] 2936.62148 179.54957 21.04307 275.22192 30

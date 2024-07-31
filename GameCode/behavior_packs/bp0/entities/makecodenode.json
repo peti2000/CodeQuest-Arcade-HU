@@ -1,0 +1,78 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cleverlike:makecodenode",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "npc":{
+        "minecraft:npc": {
+          "npc_data": {
+            "picker_offsets": {
+              "scale": [1.75, 1.75, 1.75],
+              "translate": [0, 21, 0]
+            },
+            "portrait_offsets": {
+              "scale": [2.0, 2.0, 2.0],
+              "translate": [-7, -40, 0]
+            },
+            "skin_list": [
+              {
+                "variant": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": ["mob"]
+      },
+      "minecraft:collision_box": {
+        "height": 0.0,
+        "width": 0.0
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true,
+        "breathes_solids": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:persistent": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "events": {
+      "e_npc":{
+        "add": {
+          "component_groups": [
+            "npc"
+          ]
+        }
+      },
+      "e_default":{
+        "remove": {
+          "component_groups": [
+            "npc"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cleverlike:alarm",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": ["npc"]
+      },
+      "minecraft:collision_box": {
+        "height": 1.0,
+        "width": 1.0
+      },
+      "minecraft:npc": {
+        "npc_data": {
+          "picker_offsets": {
+            "scale": [1.25, 1.25, 1.25],
+            "translate": [0, 21, 0]
+          },
+          "portrait_offsets": {
+            "scale": [1.5, 1.5, 1.5],
+            "translate": [0, -20, 0]
+          },
+          "skin_list": [
+            {
+              "variant": 0
+            }
+          ]
+        }
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true,
+        "breathes_solids": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    }
+  }
+}

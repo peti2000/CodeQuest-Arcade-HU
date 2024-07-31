@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.pcarrow": {
+			"initial_state": "hide",
+			"states": {
+				"hide": {
+					"transitions": [
+						{
+							"show": "query.mark_variant == 1"
+						}
+					]
+				},
+				"show": {
+					"particle_effects": [
+						{
+							"effect": "pcarrow"
+						}
+					],
+					"transitions": [
+						{
+							"hide": "query.mark_variant != 1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

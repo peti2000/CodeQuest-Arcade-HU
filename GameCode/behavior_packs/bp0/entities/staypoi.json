@@ -1,0 +1,86 @@
+{
+    "format_version": "1.14.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "cleverlike:staypoi",
+        "is_spawnable": false,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+      "component_groups": {
+        "cleverlike:smallpoi":{
+          "minecraft:variant": {
+            "value": 0
+          }
+        },
+        "cleverlike:npcpoi":{
+          "minecraft:variant": {
+            "value": 1
+          }
+        }
+      },
+      "components": {
+        "minecraft:breathable": {
+          "totalSupply": 15,
+          "suffocateTime": 0
+        },
+        "minecraft:nameable": {},
+        "minecraft:health": {
+          "value": 200,
+          "max": 200
+        },
+
+
+        "minecraft:scale": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 0,
+          "height": 0
+        },
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+  
+        "minecraft:type_family": {
+          "family": ["poi"]
+        },
+        "minecraft:jump.static": {},
+        "minecraft:behavior.float": {
+          "priority": 0
+        },
+        "minecraft:physics": {},
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "deals_damage": false
+          }
+        }
+      },
+      "events": {
+        "e_smallpoi":{
+          "add": {
+            "component_groups": ["cleverlike:smallpoi"]
+          },
+          "remove": {
+            "component_groups": [
+              "cleverlike:npcpoi"
+            ]
+          }
+        },
+        "e_npcpoi":{
+          "add": {
+            "component_groups": ["cleverlike:npcpoi"]
+          },
+          "remove": {
+            "component_groups": [
+              "cleverlike:smallpoi"
+            ]
+          }
+        }
+      }
+  }
+}
+  

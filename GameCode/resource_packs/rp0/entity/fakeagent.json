@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cleverlike:fakeagent",
+      "materials": { "default": "agent" },
+      "textures": {
+        "default": "textures/entity/agent"
+      },
+      "geometry": {
+        "default": "geometry.agent"
+      },
+      "render_controllers": [ "controller.render.agent" ]
+    }
+  }
+}

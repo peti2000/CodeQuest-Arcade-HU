@@ -1,0 +1,10 @@
+execute if score @e[tag=main,c=1] keyframe matches 200..209 run function cutscene/opening/c_200_209
+execute if score @e[tag=main,c=1] keyframe matches 210..219 run function cutscene/opening/c_210_219
+execute if score @e[tag=main,c=1] keyframe matches 220..229 run function cutscene/opening/c_220_229
+execute if score @e[tag=main,c=1] keyframe matches 230..239 run function cutscene/opening/c_230_239
+execute if score @e[tag=main,c=1] keyframe matches 240..249 run function cutscene/opening/c_240_249
+execute if score @e[tag=main,c=1] keyframe matches 250..259 run function cutscene/opening/c_250_259
+execute if score @e[tag=main,c=1] keyframe matches 260..269 run function cutscene/opening/c_260_269
+execute if score @e[tag=main,c=1] keyframe matches 270..279 run function cutscene/opening/c_270_279
+execute if score @e[tag=main,c=1] keyframe matches 280..289 run function cutscene/opening/c_280_289
+execute if score @e[tag=main,c=1] keyframe matches 290..299 run function cutscene/opening/c_290_299

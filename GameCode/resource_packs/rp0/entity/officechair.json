@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "cleverlike:officechair",
+		"spawn_egg": {
+		  "base_color": "#DBC315",
+		  "overlay_color": "#ED790C"
+		},
+		"render_controllers": [ 
+		  "controller.render.default" 
+		],
+		"geometry": {
+		  "default": "geometry.officechair"
+		},
+		"textures": {
+		  "default": "textures/entity/officechair"
+		},
+		  "materials": {
+		  "default": "entity_alphatest"
+		}
+	  }
+	}
+  }
+  
+  
+  

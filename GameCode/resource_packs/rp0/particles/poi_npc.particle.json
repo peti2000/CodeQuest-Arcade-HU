@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "cleverlike:npc_rings",
+			"basic_render_parameters": {
+				"material": "particles_add",
+				"texture": "textures/particle/particles"
+			}
+		},
+		"components": {
+			"minecraft:emitter_initialization": {
+				"creation_expression": "variable.size = 0.03;variable.lifetime = 2.2;"
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 200
+			},
+			"minecraft:emitter_lifetime_looping": {
+				"active_time": 0.6
+			},
+			"minecraft:emitter_shape_disc": {
+				"radius": 0.8,
+				"surface_only": true,
+				"direction": [0, 1, 0]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(1,2.5)"
+			},
+			"minecraft:particle_initial_speed": 0,
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [0, 3, 0],
+				"linear_drag_coefficient": "math.random(1,2)"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["(variable.particle_lifetime-variable.particle_age)/20", "(variable.particle_lifetime-variable.particle_age)/20"],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 128,
+					"texture_height": 128,
+					"uv": [32, 16],
+					"uv_size": [32, 32]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [0.41961, 0.80392, 0.96078, 1]
+			}
+		}
+	}
+}

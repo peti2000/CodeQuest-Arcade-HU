@@ -1,0 +1,17 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    
+    "animated:entity_alphablend": {
+      "+defines": [
+        "USE_UV_ANIM"
+      ]
+    },
+    "animatedtest:entity_alphatest": {
+      "+defines": [
+        "USE_UV_ANIM"
+      ]
+    }
+
+  }
+}

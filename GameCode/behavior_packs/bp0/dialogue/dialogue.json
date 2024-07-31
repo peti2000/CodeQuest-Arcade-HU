@@ -1,0 +1,1874 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "host_ship_preintro1",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.preintro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/0-close",
+					"/dialogue open @s @a host_ship_preintro2"
+				],
+				"on_open_commands": [
+					"/event entity @s e_nomarker",
+					"/tag @a remove prestart",
+					"/scoreboard players set @e[tag=main] bar -1"
+				]
+			},
+			{
+				"scene_tag": "host_ship_preintro2",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.preintro2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.meetcrew" } ] },
+						"commands": [
+							"/event entity @e[type=cleverlike:npc,x=246,y=112,z=314,r=2] e_sitmarker",
+							"/event entity @e[type=cleverlike:npc3,x=259,y=112,z=302,r=2] e_marker",
+							"/event entity @e[type=cleverlike:npc,x=250,y=112,z=284,r=2] e_sitmarker",
+							"/event entity @e[type=cleverlike:npc,x=252,y=112,z=311,r=2] e_marker",
+							"/event entity @e[type=cleverlike:npc,x=259,y=112,z=296,r=2] e_sitmarker",
+							"/event entity @e[type=cleverlike:npc,x=252,y=112,z=287,r=2] e_marker",
+							"/scoreboard players set @e[tag=main] bar 2"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.alreadymet" } ] },
+						"commands": [
+							"/dialogue open @s @a host_ship_preintro3"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/dialogue change @s host_ship_preintro2"
+				],
+				"on_open_commands": [
+					
+				]
+			},
+			{
+				"scene_tag": "host_ship_preintro3",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.preintro3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/dialogue open @e[type=cleverlike:makecodenode,x=277,y=110,z=299,r=2] @a makecodenode_ship_intro1"
+				],
+				"on_open_commands": [
+					"/summon cleverlike:makecodenode 277 110 299 e_npc",
+					"/scoreboard players set @e[tag=main] bar -1"
+				]
+			},
+			{
+				"scene_tag": "makecodenode_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "makecodenode.name" } ] },
+				"text": { "rawtext": [ { "translate": "makecodenode.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/tp @e[type=cleverlike:makecodenode,x=277,y=110,z=299,r=2] 13 69 163",
+					"/dialogue open @e[type=cleverlike:alarm,x=277,y=110,z=299,r=2,c=1] @a alarm_ship_intro1"
+				],
+				"on_open_commands": [
+					"/summon cleverlike:alarm 277 110 299"
+				]
+			},
+			{
+				"scene_tag": "alarm_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "alarm.name" } ] },
+				"text": { "rawtext": [ { "translate": "alarm.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/tp @e[type=cleverlike:alarm,x=277,y=110,z=299,r=2] 13 69 163",
+					"/dialogue open @e[tag=host] @a host_ship_intro1"
+				],
+				"on_open_commands": ["/tag @e[tag=main] add playalarm"]
+			},
+			{
+				"scene_tag": "host_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/dialogue open @s @a host_ship_intro2"
+				],
+				"on_open_commands": [
+					
+					"/scoreboard players set @e[tag=main] bar -1"
+				]
+			},
+			{
+				"scene_tag": "host_ship_intro2",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.intro2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/dialogue open @s @a host_ship_intro6"
+				]
+			},
+			
+			{
+				"scene_tag": "host_ship_intro6",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.intro6", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/event entity @s e_nomarker",
+					"/event entity @s e_follow",
+					"/scoreboard players set @e[tag=main] bar 3",
+					"/tag @s add runto1",
+					"/schedule on_area_loaded add 261 111 293 261 112 293 schedule/shiprun1"
+				]
+			},
+			{
+				"scene_tag": "kid2_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "kid2.name" } ] },
+				"text": { "rawtext": [ { "translate": "kid2.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] kid2met 1",
+					"/scoreboard players set @e[tag=main] kidsmet 0",
+					"/execute as @e[tag=main,scores={bar=2,kid2met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid3met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid4met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid5met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid6met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid7met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run dialogue change @e[tag=host] host_ship_preintro3",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run event entity @e[tag=host] e_marker",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run scoreboard players set @e[tag=main] bar 1"
+				]
+			},
+			{
+				"scene_tag": "kid3_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "kid3.name" } ] },
+				"text": { "rawtext": [ { "translate": "kid3.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] kid3met 1",
+					"/scoreboard players set @e[tag=main] kidsmet 0",
+					"/execute as @e[tag=main,scores={bar=2,kid2met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid3met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid4met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid5met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid6met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid7met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run dialogue change @e[tag=host] host_ship_preintro3",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run event entity @e[tag=host] e_marker",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run scoreboard players set @e[tag=main] bar 1"
+				]
+			},
+			{
+				"scene_tag": "kid4_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "kid4.name" } ] },
+				"text": { "rawtext": [ { "translate": "kid6.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] kid4met 1",
+					"/scoreboard players set @e[tag=main] kidsmet 0",
+					"/execute as @e[tag=main,scores={bar=2,kid2met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid3met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid4met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid5met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid6met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid7met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run dialogue change @e[tag=host] host_ship_preintro3",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run event entity @e[tag=host] e_marker",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run scoreboard players set @e[tag=main] bar 1"
+				]
+			},
+			{
+				"scene_tag": "kid5_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "kid5.name" } ] },
+				"text": { "rawtext": [ { "translate": "kid5.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] kid5met 1",
+					"/scoreboard players set @e[tag=main] kidsmet 0",
+					"/execute as @e[tag=main,scores={bar=2,kid2met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid3met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid4met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid5met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid6met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid7met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run dialogue change @e[tag=host] host_ship_preintro3",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run event entity @e[tag=host] e_marker",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run scoreboard players set @e[tag=main] bar 1"
+				]
+			},
+			{
+				"scene_tag": "kid6_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "kid6.name" } ] },
+				"text": { "rawtext": [ { "translate": "kid4.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] kid6met 1",
+					"/scoreboard players set @e[tag=main] kidsmet 0",
+					"/execute as @e[tag=main,scores={bar=2,kid2met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid3met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid4met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid5met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid6met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid7met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run dialogue change @e[tag=host] host_ship_preintro3",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run event entity @e[tag=host] e_marker",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run scoreboard players set @e[tag=main] bar 1"
+				]
+			},
+			{
+				"scene_tag": "kid7_ship_intro1",
+				"npc_name": { "rawtext": [ { "translate": "kid7.name" } ] },
+				"text": { "rawtext": [ { "translate": "kid7.ship.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] kid7met 1",
+					"/scoreboard players set @e[tag=main] kidsmet 0",
+					"/execute as @e[tag=main,scores={bar=2,kid2met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid3met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid4met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid5met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid6met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kid7met=1}] run scoreboard players add @s kidsmet 1",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run dialogue change @e[tag=host] host_ship_preintro3",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run event entity @e[tag=host] e_marker",
+					"/execute as @e[tag=main,scores={bar=2,kidsmet=6}] run scoreboard players set @e[tag=main] bar 1"
+				]
+			},
+			{
+				"scene_tag": "host_ship_intro7",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.intro7", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/execute as @e[tag=main,tag=!teleportactive] run summon cleverlike:staypoi 228 104 266 e_npcpoi",
+					"/tag @e[tag=main] add teleportactive",
+					
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] bar 4"
+				]
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			{
+				"scene_tag": "host_lobby_intro1",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.lobby.intro1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/scoreboard players set @e[tag=main] bar 5",
+					"/tag @a add jump"
+				],
+				"on_open_commands": [
+					
+					"/event entity @s e_nomarker"
+				]
+			},
+
+			{
+				"scene_tag": "host_lobby_intro2",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.lobby.intro2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/dialogue open @s @a host_ship_intro3"
+				]
+			},
+
+			{
+				"scene_tag": "host_ship_intro3",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.intro3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/dialogue open @s @a host_ship_intro4"
+				]
+			},
+			{
+				"scene_tag": "host_ship_intro4",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.ship.intro4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.gotoagent" } ] },
+						"commands": [
+							"/dialogue open @s @a host_lobby_intro4"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute as @e[tag=main,tag=!tablespawned] run summon cleverlike:tuttable 200 104 171",
+					"/execute as @e[tag=main,tag=!tablespawned] as @e[type=cleverlike:tuttable,x=200,y=104,z=171,r=2] at @s run tp @s ~~1~ facing ~10~~",
+					"/execute as @e[tag=main,tag=!tablespawned] run dialogue change @e[type=cleverlike:tuttable,x=200,y=104,z=171,r=3] tuttable_lobby1",
+					"/execute as @e[tag=main,tag=!tablespawned] run tag @e[tag=main] add tablespawned"
+				]
+			},
+			{
+				"scene_tag": "host_lobby_intro4",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.lobby.intro4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo1YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/tag @e[tag=host] add testforagent",
+					"/scoreboard players set @e[tag=main] bar 7",
+					"/clone 50 81 172 52 80 172 204 104 169",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/1-helloAgent",
+					"/dialogue change @s host_lobby_intro4a"
+				],
+				"on_open_commands": [
+					"/event entity @s e_nomarker"
+				]
+			},
+			{
+				"scene_tag": "host_lobby_intro4a",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.lobby.intro4a", "with": ["\n"] } ] },
+				"buttons": [
+					
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo1YT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "host_lobby_intro5",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.lobby.intro5", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.nextactivity" } ] },
+						"commands": [
+							"/fill 204 104 169 206 105 169 air",
+							"/dialogue open @s @a host_lobby_intro6"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/1-helloAgent"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo1YT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.skiptutorial" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+							"/fill 206 104 169 204 105 169 air",
+							"/dialogue open @s @a host_lobby_intro7"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": [
+							"/dialogue change @s host_lobby_intro5"
+						]
+					}
+				],
+				"on_close_commands": [
+					
+				]
+			},
+			{
+				"scene_tag": "host_lobby_intro6",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.lobby.intro6", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/tp @a 127 97 148 facing 129 98 155",
+					"/schedule on_area_loaded add 123 105 143 130 96 156 schedule/tuttablestart",
+					"/schedule on_area_loaded add 117 98 156 104 97 161 schedule/tuttablewire"
+				]
+			},
+			{
+				"scene_tag": "tuttable_lobby1",
+				"npc_name": { "rawtext": [ { "translate": "tuttable.name" } ] },
+				"text": { "rawtext": [ { "translate": "tuttable.lobby.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.start" } ] },
+						"commands": [
+							"/tp @a 127 97 148 facing 129 98 155",
+							"/schedule on_area_loaded add 123 105 143 130 96 156 schedule/tuttablestart",
+							"/schedule on_area_loaded add 117 98 156 104 97 161 schedule/tuttablewire"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+			{
+				"scene_tag": "tutnpc_lesson2_step1",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson2.step1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/function tuttable/resetlesson2",
+							"/execute as @p run tp @c 128 98 153 facing 118 98 151"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo2YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/scoreboard players set @e[tag=main] bar 101",
+					"/dialogue change @s tutnpc_lesson2_step1",
+					"/scoreboard players set @e[tag=main] tutstep 21",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/2-1-events"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] dialogstep 2"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson2_step2",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson2.step2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/function tuttable/resetlesson2",
+							"/execute as @p run tp @c 127 98 153 facing 118 98 153"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo2YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/clone 67 82 173 65 81 172 126 102 151",
+					"/scoreboard players set @e[tag=main] bar 102",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/2-2-events",
+					"/dialogue change @s tutnpc_lesson2_step2"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] tutstep 22"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson2_step3",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson2.step3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/function tuttable/resetlesson2",
+							"/execute as @p run tp @c 127 98 153 facing 118 98 153",
+							"/setblock 126 98 153 air"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo2YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/clone 64 82 173 62 81 172 126 102 151",
+					"/scoreboard players set @e[tag=main] bar 103",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/2-3-events",
+					"/dialogue change @s tutnpc_lesson2_step3"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] tutstep 23"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson2_step4",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson2.step4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/fill 126 102 151 128 103 152 air",
+					"/clone 61 82 173 59 81 172 116 102 154",
+					"/clone 9 66 159 16 71 166 113 100 144",
+					"/tp @a 117 103 150 facing 117 97 156",
+					"/execute as @p run tp @c 117 98 156 facing 117 98 166",
+					"/tp @s 117 103 148 facing @p",
+					"/event entity @s e_marker",
+					"/fill 123 97 143 130 105 150 air",
+					"/tag @e[tag=main] add dialogdelay",
+					"/dialogue change @s tutnpc_lesson3_step1"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] bar -1",
+					"/scoreboard players set @e[tag=main] tutstep 24"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson3_step1",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson3.step1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/function tuttable/resetlesson3",
+							"/execute as @p run tp @c 117 98 156 facing 117 98 166"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo3YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/scoreboard players set @e[tag=main] bar 104",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/3-sequencing"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] dialogstep 3",
+					"/scoreboard players set @e[tag=main] tutstep 31",
+					"/event entity @s e_nomarker"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson3_step2",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson3.step2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/fill 116 102 154 118 103 155 air",
+					"/clone 58 82 173 56 81 172 104 102 153",
+					"/clone 9 66 159 16 71 166 100 100 143",
+					"/tp @a 105 103 149 facing 109 98 154",
+					"/execute as @p run tp @c 109 98 154 facing 100 98 154",
+					"/tp @s 104 103 147 facing @p",
+					"/event entity @s e_marker",
+					"/fill 113 97 144 120 105 151 air",
+					"/tag @e[tag=main] add dialogdelay",
+					"/dialogue change @s tutnpc_lesson4_step1"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] bar -1",
+					"/scoreboard players set @e[tag=main] tutstep 32"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson4_step1",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson4.step1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/function tuttable/resetlesson4",
+							"/execute as @p run tp @c 109 98 154 facing 100 98 154"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo4YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/scoreboard players set @e[tag=main] bar 105",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/4-repeat"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] dialogstep 4",
+					"/scoreboard players set @e[tag=main] tutstep 41",
+					"/event entity @s e_nomarker"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson4_step2",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson4.step2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/fill 104 102 153 106 103 154 air",
+					"/clone 48 82 173 49 81 171 88 102 147",
+					"/clone 9 66 159 16 71 166 91 100 143",
+					"/tp @a 92 103 148 facing 86 98 146",
+					"/execute as @p run tp @c 86 98 146 facing 86 98 154",
+					"/tp @s 94 103 147 facing @p",
+					"/event entity @s e_marker",
+					"/fill 100 97 143 107 105 150 air",
+					"/tag @e[tag=main] add dialogdelay",
+					"/dialogue change @s tutnpc_lesson5_step1"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] bar -1",
+					"/scoreboard players set @e[tag=main] tutstep 42"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson5_step1",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson5.step1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/function tuttable/resetlesson5",
+							"/execute as @p run tp @c 86 98 146 facing 86 98 154"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo5YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/scoreboard players set @e[tag=main] bar 106",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/5-if"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] dialogstep 5",
+					"/scoreboard players set @e[tag=main] tutstep 51",
+					"/event entity @s e_nomarker"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson5_oops",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson5.oops", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.tryagain" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] oopsdelay 0",
+					"/function tuttable/resetlesson5",
+					"/execute as @p run tp @c 86 98 146 facing 86 98 154",
+					"/scoreboard players set @e[tag=main] bar 106",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/5-if"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson5_step2",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson5.step2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/fill 91 100 143 98 105 150 air",
+					"/fill 87 104 149 89 102 147 air",
+					"/tp @a 41 97 35 facing 41 97 45",
+					"/execute as @p run tp @c 31 98 38 facing 40 98 38",
+					"/execute as @p run schedule on_area_loaded add 37 97 28 44 105 35 schedule/lesson6"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] bar -1",
+					"/scoreboard players set @e[tag=main] tutstep 52"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson6_step1",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson6.step1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/function tuttable/resetlesson6",
+							"/execute as @p run tp @c 31 98 38 facing 40 98 38"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeTutorialVideo6YT"
+						
+					}
+				],
+				"on_close_commands": [
+					"/scoreboard players set @e[tag=main] bar 107",
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/#tutorial:https://github.com/peti2000/CodeQuest-Arcade-HU/1-saveTheArcade/tutorials/6-while"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] dialogstep 6",
+					"/scoreboard players set @e[tag=main] tutstep 61",
+					"/event entity @s e_nomarker"
+				]
+			},
+			{
+				"scene_tag": "tutnpc_lesson6_step2",
+				"npc_name": { "rawtext": [ { "translate": "tutnpc.name" } ] },
+				"text": { "rawtext": [ { "translate": "tutnpc.lesson6.step2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.next" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/fill 36 102 37 38 103 38 air",
+					"/scoreboard players set @e[tag=main] bar 1",
+					"/fill 37 97 28 44 105 35 air",
+					"/tp @a 207 104 174 facing @e[tag=host]",
+					"/execute as @p run tp @c 209 104 170 facing 209 104 180",
+					"/dialogue change @e[type=cleverlike:tuttable,x=200,y=104,z=171,r=3] tuttable_lobby2",
+					"/event entity @e[tag=host] e_marker",
+					"/dialogue change @e[tag=host] host_lobby_intro7",
+					"/tp @s 13 69 163"
+				],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] bar -1",
+					"/scoreboard players set @e[tag=main] tutstep 62"
+				]
+			},
+			{
+				"scene_tag": "host_lobby_intro7",
+				"npc_name": { "rawtext": [ { "translate": "host.name" } ] },
+				"text": { "rawtext": [ { "translate": "host.lobby.intro7", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [
+					"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+					"/event entity @s e_nomarker",
+					"/scoreboard players set @e[tag=main] bar 9",
+					"/execute as @e[tag=main,tag=!cabinetsspawned] run function lobby/lobbysetup",
+					"/dialogue change @s host_lobby_intro7"
+				]
+			},
+			{
+				"scene_tag": "tuttable_lobby2",
+				"npc_name": { "rawtext": [ { "translate": "tuttable.name" } ] },
+				"text": { "rawtext": [ { "translate": "tuttable.lobby.2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			{
+				"scene_tag": "parkour_lobby1",
+				"npc_name": { "rawtext": [ { "translate": "parkour.name" } ] },
+				"text": { "rawtext": [ { "translate": "parkour.lobby.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.gotocabinet" } ] },
+						"commands": [
+							"/function lobby/toparkour"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "hideandseek_lobby1",
+				"npc_name": { "rawtext": [ { "translate": "hideandseek.name" } ] },
+				"text": { "rawtext": [ { "translate": "hideandseek.lobby.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.gotocabinet" } ] },
+						"commands": [
+							"/function lobby/tohideandseek"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "rockpaperscissors_lobby1",
+				"npc_name": { "rawtext": [ { "translate": "rockpaperscissors.name" } ] },
+				"text": { "rawtext": [ { "translate": "rockpaperscissors.lobby.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.gotocabinet" } ] },
+						"commands": [
+							"/function lobby/torockpaperscissors"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "aimtrainer_lobby1",
+				"npc_name": { "rawtext": [ { "translate": "aimtrainer.name" } ] },
+				"text": { "rawtext": [ { "translate": "aimtrainer.lobby.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.gotocabinet" } ] },
+						"commands": [
+							"/function lobby/toaimtrainer"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "dunktank_lobby1",
+				"npc_name": { "rawtext": [ { "translate": "dunktank.name" } ] },
+				"text": { "rawtext": [ { "translate": "dunktank.lobby.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.gotocabinet" } ] },
+						"commands": [
+							"/function lobby/todunktank"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "buildyourown_lobby1",
+				"npc_name": { "rawtext": [ { "translate": "buildyourown.name" } ] },
+				"text": { "rawtext": [ { "translate": "buildyourown.lobby.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.gotocabinet" } ] },
+						"commands": [
+							"/function lobby/tobuildyourown"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			{
+				"scene_tag": "parkour_npc_intro",
+				"npc_name": { "rawtext": [ { "translate": "parkour.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "parkour.npc.intro", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/ParkourWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/ParkourVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] parkourdelay -1"
+				]
+			},
+			{
+				"scene_tag": "parkour_npc1",
+				"npc_name": { "rawtext": [ { "translate": "parkour.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "parkour.npc.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/ParkourWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/ParkourVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "parkour_game1",
+				"npc_name": { "rawtext": [ { "translate": "parkour.name" } ] },
+				"text": { "rawtext": [ { "translate": "parkour.game.1", "with": ["\n"] } ] },
+				"buttons": [
+					
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/dialogue open @s @a parkour_game_reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.turnon" } ] },
+						"commands": [
+							"/function parkour/turnon"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.returntolobby" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+							"/clear @a",
+							"/gamemode a @a",
+							"/scoreboard players set @e[tag=main] bar 9",
+							"/execute as @p run tp @c 209 104 170 facing 209 104 180",
+							"/tp @a 207 104 177 facing 207 104 167",
+							"/spawnpoint @a 207 104 177"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "parkour_game_reset",
+				"npc_name": { "rawtext": [ { "translate": "parkour.name" } ] },
+				"text": { "rawtext": [ { "translate": "parkour.game.reset", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.confirm" } ] },
+						"commands": [
+							"/function parkour/reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.cancel" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+
+
+
+
+			{
+				"scene_tag": "hideandseek_npc_intro",
+				"npc_name": { "rawtext": [ { "translate": "hideandseek.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "hideandseek.npc.intro", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/HideNSeekWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/HideNSeekVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] hideandseekdelay -1"
+				]
+			},
+			{
+				"scene_tag": "hideandseek_npc1",
+				"npc_name": { "rawtext": [ { "translate": "hideandseek.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "hideandseek.npc.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/HideNSeekWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/HideNSeekVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "hideandseek_game1",
+				"npc_name": { "rawtext": [ { "translate": "hideandseek.name" } ] },
+				"text": { "rawtext": [ { "translate": "hideandseek.game.1", "with": ["\n"] } ] },
+				"buttons": [
+					
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/dialogue open @s @a hideandseek_game_reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.turnon" } ] },
+						"commands": [
+							"/function hideandseek/turnon"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.returntolobby" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+							"/clear @a",
+							"/gamemode a @a",
+							"/scoreboard players set @e[tag=main] bar 9",
+							"/execute as @p run tp @c 209 104 170 facing 209 104 180",
+							"/tp @a 207 104 177 facing 207 104 167",
+							"/spawnpoint @a 207 104 177"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "hideandseek_game_reset",
+				"npc_name": { "rawtext": [ { "translate": "hideandseek.name" } ] },
+				"text": { "rawtext": [ { "translate": "hideandseek.game.reset", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.confirm" } ] },
+						"commands": [
+							"/function hideandseek/reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.cancel" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			{
+				"scene_tag": "rockpaperscissors_npc_intro",
+				"npc_name": { "rawtext": [ { "translate": "rockpaperscissors.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "rockpaperscissors.npc.intro", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/RockPaperScissorsWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/RockPaperScissorsVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] rockpaperscissorsdelay -1"
+				]
+			},
+			{
+				"scene_tag": "rockpaperscissors_npc1",
+				"npc_name": { "rawtext": [ { "translate": "rockpaperscissors.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "rockpaperscissors.npc.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/RockPaperScissorsWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/RockPaperScissorsVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "rockpaperscissors_game1",
+				"npc_name": { "rawtext": [ { "translate": "rockpaperscissors.name" } ] },
+				"text": { "rawtext": [ { "translate": "rockpaperscissors.game.1", "with": ["\n"] } ] },
+				"buttons": [
+					
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/dialogue open @s @a rockpaperscissors_game_reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.turnon" } ] },
+						"commands": [
+							"/function rockpaperscissors/turnon"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.returntolobby" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+							"/clear @a",
+							"/gamemode a @a",
+							"/scoreboard players set @e[tag=main] bar 9",
+							"/execute as @p run tp @c 209 104 170 facing 209 104 180",
+							"/tp @a 207 104 177 facing 207 104 167",
+							"/spawnpoint @a 207 104 177"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "rockpaperscissors_game_reset",
+				"npc_name": { "rawtext": [ { "translate": "rockpaperscissors.name" } ] },
+				"text": { "rawtext": [ { "translate": "rockpaperscissors.game.reset", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.confirm" } ] },
+						"commands": [
+							"/function rockpaperscissors/reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.cancel" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			{
+				"scene_tag": "aimtrainer_npc_intro",
+				"npc_name": { "rawtext": [ { "translate": "aimtrainer.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "aimtrainer.npc.intro", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/AimTrainerWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/AimTrainerVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] aimtrainerdelay -1"
+				]
+			},
+			{
+				"scene_tag": "aimtrainer_npc1",
+				"npc_name": { "rawtext": [ { "translate": "aimtrainer.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "aimtrainer.npc.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/AimTrainerWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/AimTrainerVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "aimtrainer_game1",
+				"npc_name": { "rawtext": [ { "translate": "aimtrainer.name" } ] },
+				"text": { "rawtext": [ { "translate": "aimtrainer.game.1", "with": ["\n"] } ] },
+				"buttons": [
+					
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/dialogue open @s @a aimtrainer_game_reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.turnon" } ] },
+						"commands": [
+							"/function aimtrainer/turnon"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.returntolobby" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+							"/clear @a",
+							"/gamemode a @a",
+							"/scoreboard players set @e[tag=main] bar 9",
+							"/execute as @p run tp @c 209 104 170 facing 209 104 180",
+							"/tp @a 207 104 177 facing 207 104 167",
+							"/spawnpoint @a 207 104 177"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "aimtrainer_game_reset",
+				"npc_name": { "rawtext": [ { "translate": "aimtrainer.name" } ] },
+				"text": { "rawtext": [ { "translate": "aimtrainer.game.reset", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.confirm" } ] },
+						"commands": [
+							"/function aimtrainer/reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.cancel" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+			{
+				"scene_tag": "dunktank_npc_intro",
+				"npc_name": { "rawtext": [ { "translate": "dunktank.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "dunktank.npc.intro", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/DunkTankWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/DunkTankVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] dunktankdelay -1"
+				]
+			},
+			{
+				"scene_tag": "dunktank_npc1",
+				"npc_name": { "rawtext": [ { "translate": "dunktank.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "dunktank.npc.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/DunkTankWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideos" } ] },
+						"url": "aka.ms/DunkTankVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "dunktank_game1",
+				"npc_name": { "rawtext": [ { "translate": "dunktank.name" } ] },
+				"text": { "rawtext": [ { "translate": "dunktank.game.1", "with": ["\n"] } ] },
+				"buttons": [
+					
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/dialogue open @s @a dunktank_game_reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.turnon" } ] },
+						"commands": [
+							"/function dunktank/turnon"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.returntolobby" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+							"/clear @a",
+							"/gamemode a @a",
+							"/scoreboard players set @e[tag=main] bar 9",
+							"/execute as @p run tp @c 209 104 170 facing 209 104 180",
+							"/tp @a 207 104 177 facing 207 104 167",
+							"/spawnpoint @a 207 104 177"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "dunktank_game_reset",
+				"npc_name": { "rawtext": [ { "translate": "dunktank.name" } ] },
+				"text": { "rawtext": [ { "translate": "dunktank.game.reset", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.confirm" } ] },
+						"commands": [
+							"/function dunktank/reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.cancel" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+
+
+
+
+
+
+
+
+
+
+
+
+
+			{
+				"scene_tag": "buildyourown_npc_intro",
+				"npc_name": { "rawtext": [ { "translate": "buildyourown.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "buildyourown.npc.intro", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/BuildYourOwnWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeBuildYourOwnVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.rubric" } ] },
+						"url": "aka.ms/BuildYourOwnRubric"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": [],
+				"on_open_commands": [
+					"/scoreboard players set @e[tag=main] buildyourowndelay -1"
+				]
+			},
+			{
+				"scene_tag": "buildyourown_npc1",
+				"npc_name": { "rawtext": [ { "translate": "buildyourown.npc.name" } ] },
+				"text": { "rawtext": [ { "translate": "buildyourown.npc.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.openguide" } ] },
+						"url": "aka.ms/BuildYourOwnWorkbook"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.tutorialvideo" } ] },
+						"url": "aka.ms/GameCodeBuildYourOwnVideosYT"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.rubric" } ] },
+						"url": "aka.ms/BuildYourOwnRubric"
+						
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "buildyourown_game1",
+				"npc_name": { "rawtext": [ { "translate": "buildyourown.name" } ] },
+				"text": { "rawtext": [ { "translate": "buildyourown.game.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.returntolobby" } ] },
+						"commands": [
+							"/codebuilder navigate @initiator false https://minecraft.makecode.com/",
+							"/clear @a",
+							"/gamemode a @a",
+							"/scoreboard players set @e[tag=main] bar 9",
+							"/execute as @p run tp @c 209 104 170 facing 209 104 180",
+							"/tp @a 207 104 177 facing 207 104 167",
+							"/spawnpoint @a 207 104 177"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.reset" } ] },
+						"commands": [
+							"/dialogue open @s @a buildyourown_game_reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.close" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			},
+			{
+				"scene_tag": "buildyourown_game_reset",
+				"npc_name": { "rawtext": [ { "translate": "buildyourown.name" } ] },
+				"text": { "rawtext": [ { "translate": "buildyourown.game.reset", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "button.confirm" } ] },
+						"commands": [
+							"/function buildyourown/reset"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "button.cancel" } ] },
+						"commands": []
+					}
+				],
+				"on_close_commands": []
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		]
+	}
+}
+

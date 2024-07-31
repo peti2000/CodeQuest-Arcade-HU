@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.arrow": {
+			"initial_state": "hide",
+			"states": {
+				"hide": {
+					"transitions": [
+						{
+							"show": "query.mark_variant == 1"
+						},
+						{
+							"showsit": "query.mark_variant == 2"
+						}
+					]
+				},
+				"show": {
+					"particle_effects": [
+						{
+							"effect": "arrow"
+						}
+					],
+					"transitions": [
+						{
+							"hide": "query.mark_variant != 1"
+						}
+					]
+				},
+				"showsit": {
+					"particle_effects": [
+						{
+							"effect": "sitarrow"
+						}
+					],
+					"transitions": [
+						{
+							"hide": "query.mark_variant != 2"
+						}
+					]
+				}
+			}
+		}
+	}
+}

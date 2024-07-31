@@ -1,0 +1,95 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cleverlike:arcade4",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "nomarker": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "marker": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 1,
+        "max": 1,
+        "min": 1
+      },
+      "minecraft:type_family": {
+        "family": ["npc"]
+      },
+      "minecraft:collision_box": {
+        "height": 2.0,
+        "width": 1.0
+      },
+      "minecraft:npc": {
+        "npc_data": {
+          "picker_offsets": {
+            "scale": [1.75, 1.75, 1.75],
+            "translate": [0, 21, 0]
+          },
+          "portrait_offsets": {
+            "scale": [1.0, 1.0, 1.0],
+            "translate": [-10, 0, 0]
+          },
+          "skin_list": [
+            {
+              "variant": 0
+            }
+          ]
+        }
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true,
+        "breathes_solids": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "deals_damage": false
+          }
+        ]
+      },
+
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "events": {
+      "e_nomarker": {
+        "add": {
+          "component_groups": ["nomarker"]
+        },
+        "remove": {
+          "component_groups": ["marker"]
+        }
+      },
+      "e_marker": {
+        "add": {
+          "component_groups": ["marker"]
+        },
+        "remove": {
+          "component_groups": ["nomarker"]
+        }
+      }
+    }
+  }
+}

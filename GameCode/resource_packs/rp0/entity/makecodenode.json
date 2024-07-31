@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cleverlike:makecodenode",
+      "spawn_egg": {
+        "base_color": "#DBC315",
+        "overlay_color": "#ED790C"
+      },
+      "render_controllers": ["controller.render.default"],
+      "geometry": {
+        "default": "geometry.makecodenode"
+      },
+      "textures": {
+        "default": "textures/entity/MakeCodeNode"
+      },
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "animations": {
+        "idle": "animation.makecodenode.spin"
+      },
+      "scripts": {
+        "animate": ["idle"]
+      }
+    }
+  }
+}

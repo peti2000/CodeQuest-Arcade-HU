@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"render_controllers": {
+		"controller.render.npc_fc": {
+			"arrays":{
+				"textures":	{
+					"array.textures": [
+						"texture.host",
+						"texture.npc1",
+						"texture.npc2",
+						"texture.npc3",
+						"texture.npc4",
+						"texture.npc5",
+						"texture.npc6",
+						"texture.npc7",
+						"texture.npc8",
+						"texture.npc9",
+						"texture.npc10",
+						"texture.npc11",
+						"texture.npc12",
+						"texture.npc13",
+						"texture.npc14",
+						"texture.npc15",
+						"texture.npc16",
+						"texture.npc17",
+						"texture.npc18",
+						"texture.npc19",
+						"texture.npc20"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.textures[query.variant]"
+			]
+		}
+	}
+}

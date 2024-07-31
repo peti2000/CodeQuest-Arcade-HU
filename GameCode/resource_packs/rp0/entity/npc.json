@@ -1,0 +1,71 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cleverlike:npc",
+      "spawn_egg": {
+        "base_color": "#DBC315",
+        "overlay_color": "#ED790C"
+      },
+      "render_controllers": [ 
+        "controller.render.npc_fc" 
+      ],
+      "geometry": {
+        "default": "geometry.npc_fc"
+      },
+      "textures": {
+        "host": "textures/entity/npc/HOST_01",
+        "npc1": "textures/entity/npc/01",
+        "npc2": "textures/entity/npc/02",
+        "npc3": "textures/entity/npc/HOST_01",
+        "npc4": "textures/entity/npc/04",
+        "npc5": "textures/entity/npc/05",
+        "npc6": "textures/entity/npc/06",
+        "npc7": "textures/entity/npc/07",
+        "npc8": "textures/entity/npc/HOST_01",
+        "npc9": "textures/entity/npc/HOST_01",
+        "npc10": "textures/entity/npc/HOST_01",
+        "npc11": "textures/entity/npc/HOST_01",
+        "npc12": "textures/entity/npc/HOST_01",
+        "npc13": "textures/entity/npc/HOST_01",
+        "npc14": "textures/entity/npc/HOST_01",
+        "npc15": "textures/entity/npc/HOST_01",
+        "npc16": "textures/entity/npc/HOST_01",
+        "npc17": "textures/entity/npc/HOST_01",
+        "npc18": "textures/entity/npc/HOST_01",
+        "npc19": "textures/entity/npc/HOST_01",
+        "npc20": "textures/entity/npc/HOST_01"
+        
+      },
+      "particle_effects": {
+        "arrow": "cleverlike:arrow",
+        "sitarrow": "cleverlike:sitarrow"
+      },
+        "materials": {
+        "default": "entity_alphatest"
+      },
+      "animations": {
+        "move": "animation.humanoid.move",
+        "arrow": "controller.animation.arrow",
+        "look_at_target": "animation.common.look_at_target",
+        "riding.arms": "animation.humanoid.riding.arms",
+        "riding.legs": "animation.humanoid.riding.legs"
+      },
+
+      "scripts": {
+        "pre_animation":[
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+      ],
+        "animate": [
+          "arrow",
+          "look_at_target",
+          { "riding.arms": "query.is_riding" },
+          { "riding.legs": "query.is_riding" },
+          { "move" : "query.modified_move_speed"} 
+        ]
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "cleverlike:arcade1",
+		"spawn_egg": {
+		  "base_color": "#DBC315",
+		  "overlay_color": "#ED790C"
+		},
+		"render_controllers": [ 
+		  "controller.render.default" 
+		],
+		"geometry": {
+		  "default": "geometry.arcade1"
+		},
+		"textures": {
+		  "default": "textures/entity/ARCADE_01"
+		},
+		  "materials": {
+		  "default": "entity_alphatest"
+		},
+		"particle_effects": {
+			"pcarrow": "cleverlike:pcarrow"
+		},
+		"animations": {
+			"pcarrow": "controller.animation.pcarrow"
+		},
+		"scripts": {
+			"pre_animation":[
+				"variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+			],
+		  "animate": [
+			"pcarrow"
+		  ]
+		}
+	  }
+	}
+  }
+  
+  
+  
